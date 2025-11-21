@@ -1,0 +1,14 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "unlock": { "context": "AlwaysUnlocked" },
+    "description": { "identifier": "thm_rmt:chest_sort" },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      "minecraft:chest",
+      "minecraft:redstone_torch",
+      "minecraft:redstone"
+    ],
+    "result": { "item": "thm_rmt:chest_sort" }
+  }
+}

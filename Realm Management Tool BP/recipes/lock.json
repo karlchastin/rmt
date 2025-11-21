@@ -1,0 +1,14 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "unlock": { "context": "AlwaysUnlocked" },
+    "description": { "identifier": "thm_rmt:lock" },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      "minecraft:gold_ingot",
+      "minecraft:redstone",
+      "minecraft:iron_ingot"
+    ],
+    "result": { "item": "thm_rmt:lock" }
+  }
+}

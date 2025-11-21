@@ -1,0 +1,43 @@
+{
+  "format_version": "1.21.60",
+  "minecraft:crafting_items_catalog": {
+    "categories": [
+      {
+        "category_name": "equipment",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "thm_rmt:realm_tool",
+              "name": "thm_rmt:itemGroup.name.equipment"
+            },
+            "items": [
+              "thm_rmt:realm_tool",
+              "thm_rmt:claim_flag",
+              "thm_rmt:admin_claim_flag",
+              "thm_rmt:hologram",
+              "thm_rmt:hologram_edit",
+              "thm_rmt:lock",
+              "thm_rmt:chest_sort",
+              "thm_rmt:chunk_viewer"
+            ]
+          }
+        ]
+      },
+      {
+        "category_name": "construction",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "thm_rmt:jump_pad",
+              "name": "thm_rmt:itemGroup.name.blocks"
+            },
+            "items": [
+              "thm_rmt:jump_pad",
+              "thm_rmt:elevator"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

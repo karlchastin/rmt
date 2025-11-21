@@ -1,0 +1,10 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "unlock": { "context": "AlwaysUnlocked" },
+    "description": { "identifier": "thm_rmt:realm_tool_from_red_sand" },
+    "tags": ["crafting_table"],
+    "ingredients": ["minecraft:red_sand"],
+    "result": { "item": "thm_rmt:realm_tool" }
+  }
+}

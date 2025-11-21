@@ -1,0 +1,14 @@
+{
+  "format_version": "1.21.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "thm_rmt:realm_tool",
+      "menu_category": { "category": "equipment" }
+    },
+    "components": {
+      "minecraft:hand_equipped": { "value": false },
+      "minecraft:max_stack_size": { "value": 1 },
+      "minecraft:icon": { "textures": { "default": "thm_rmt_realm_tool" } }
+    }
+  }
+}

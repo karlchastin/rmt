@@ -1,0 +1,10 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "unlock": { "context": "AlwaysUnlocked" },
+    "description": { "identifier": "thm_rmt:hologram_edit" },
+    "tags": ["crafting_table"],
+    "ingredients": ["minecraft:sign", "minecraft:redstone", "minecraft:stick"],
+    "result": { "item": "thm_rmt:hologram_edit" }
+  }
+}

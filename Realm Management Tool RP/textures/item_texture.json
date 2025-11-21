@@ -1,0 +1,14 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {	
+    "thm_rmt_claim_flag": { "textures": [ "textures/thm/rmt/items/claim_flag" ] },
+    "thm_rmt_admin_claim_flag": { "textures": [ "textures/thm/rmt/items/admin_claim_flag" ] },
+    "thm_rmt_chest_sort": { "textures": [ "textures/thm/rmt/items/chest_sort" ] },
+    "thm_rmt_hologram": { "textures": [ "textures/thm/rmt/items/hologram" ] },
+    "thm_rmt_hologram_edit": { "textures": [ "textures/thm/rmt/items/hologram_edit" ] },
+    "thm_rmt_realm_tool": { "textures": [ "textures/thm/rmt/items/realm_tool" ] },
+    "thm_rmt_lock": { "textures": [ "textures/thm/rmt/items/lock" ] },
+    "thm_rmt_chunk_viewer": { "textures": [ "textures/thm/rmt/items/chunk_viewer" ] }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.thm_rmt_claim_flag.particle": {
+      "loop": true,
+      "animation_length": 1,
+      "bones": { "particle": { "position": ["v.x_offset", 0, "v.z_offset"] } },
+      "particle_effects": {
+        "0.0": { "effect": "claim_particle", "locator": "root" }
+      }
+    },
+    "animation.thm_rmt_claim_flag.rot": {
+      "loop": true,
+      "bones": { "flag": { "rotation": [0, "v.rot", 0] } }
+    },
+    "animation.thm_rmt_claim_flag.place": {
+      "animation_length": 0.25,
+      "bones": {
+        "root": {
+          "position": [0, 0, 0],
+          "scale": {
+            "0.0": [1, 1, 1],
+            "0.0833": [1, 0.75, 1],
+            "0.25": [1, 1, 1]
+          }
+        }
+      }
+    }
+  }
+}

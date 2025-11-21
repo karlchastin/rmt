@@ -1,0 +1,1291 @@
+pack.name=Realm Management Tool Resources
+pack.description=§fCreated by §bTomhmagic Creations §f- for support:§9discord.gg/tomhmagic
+
+##--------------------- Entities ---------------------##
+entity.thm_rmt:holo_entity.name=Hologram Entity
+entity.thm_rmt:advanced_invsee.name=Advanced Invsee
+entity.thm_rmt:dummy.name=Dummy Entity
+entity.thm_rmt:storage.name=Storage Entity
+entity.thm_rmt:claim_flag.name=Claim Flag
+
+
+##--------------------- Items ---------------------##
+
+thm_rmt:itemGroup.name.equipment=RMT Equipment
+thm_rmt:itemGroup.name.blocks=RMT Blocks
+
+item.thm_rmt:chest_sort=Chest Sorter~LINEBREAK~§7Interact with a container to sort it§r
+item.thm_rmt:claim_flag=Claim Flag~LINEBREAK~§7Place down to start/expand a claim§r
+item.thm_rmt:admin_claim_flag=Admin Claim Flag~LINEBREAK~§cOnly usable by Admins§r~LINEBREAK~§7Place down to start/expand an admin claim. Sneak to claim for another player.§r
+item.thm_rmt:hologram=Place Hologram~LINEBREAK~§7Place down to create a hologram§r
+item.thm_rmt:hologram_edit=Holgram Editor~LINEBREAK~§7Interact with a hologram to edit it§r
+item.thm_rmt:realm_tool=Realm Tool~LINEBREAK~§7Use item to open the Realm Management Tool Menu§r
+item.thm_rmt:lock=Lock~LINEBREAK~§7Interact with a container or door to lock it§r
+item.thm_rmt:chunk_viewer=Chunk Viewer~LINEBREAK~§7Use item to quickly view the chunk you are in ~LINEBREAK~Place in your offhand to continuously view the chunk§r
+
+##--------------------- Blocks ---------------------##
+tile.thm_rmt:jump_pad.name=Jump Pad~LINEBREAK~§7Place in the direction you want to launch players. Interact with redstone dust to increast the launch power§r
+tile.thm_rmt:elevator.name=Elevator Block~LINEBREAK~§7Place 1 block above the floor, all elevators in the same XZ will be connected§r
+
+##--------------------- Messages ---------------------##
+
+thm_rmt.newUpdate=There has been an update, use the Realm Tool and check changelogs to read more!
+
+thm_rmt.utils.teleporting=Teleporting in %s
+thm_rmt.rankup=You have received the rank %s
+thm_rmt.rankdown=You have had the rank %s removed
+thm_rmt.message.end.locked=The End is locked!
+thm_rmt.message.nether.locked=The Nether is locked!
+
+thm_rmt.message.chunk=§bChunk§r: %s
+thm_rmt.claim.chunks.added=Claim Chunks: %s
+
+thm_rmt.claim.chunks.add=You have received §a%s§r claim chunks
+thm_rmt.claim.chunks.remove=You've had §a%s§r claim chunks removed
+
+thm_rmt.command.error.player_not_found=Player (%s) not found! 
+thm_rmt.command.resetHolograms.success=Holograms reset for player %s
+thm_rmt.command.error.noRank=No rank was given!
+thm_rmt.command.error.rankNotFound=Rank %s not found!
+
+## AFK
+thm_rmt.afk.title=§eYou are AFK§r
+thm_rmt.afk.reset=You are no longer AFK
+thm_rmt.afk.message.1=Did you feed your cows?
+thm_rmt.afk.message.2=Is it snack time yet?
+thm_rmt.afk.message.3=Is that a creeper behind you?
+thm_rmt.afk.message.4=Did you say goodnight to the animals?
+thm_rmt.afk.message.5=Did you remember to close the door?
+thm_rmt.afk.message.6=Are you napping in a cave?
+thm_rmt.afk.message.7=Are you pretending to be a tree?
+thm_rmt.afk.message.8=Did you fall asleep standing up?
+thm_rmt.afk.message.9=Are you hiding from the creepers?
+thm_rmt.afk.message.10=Did you lose track of time again?
+thm_rmt.afk.message.11=Did you leave the chickens in charge?
+thm_rmt.afk.message.12=Are you dreaming of diamonds?
+thm_rmt.afk.message.13=Are you blending in with the grass?
+thm_rmt.afk.message.14=Are you counting sheepzzz zzz zz?
+thm_rmt.afk.message.15=Hello, is this thing on?
+thm_rmt.afk.message.16=Don't forget the cookies!
+thm_rmt.afk.message.17=Gone fishing?
+thm_rmt.afk.message.18=It's ok. I'll still be here when you get back!
+thm_rmt.afk.message.19=I miss you!
+thm_rmt.afk.message.20=Having a break from dying too much?
+thm_rmt.afk.message.21=It's behind you?
+thm_rmt.afk.message.22=Is the red light on?
+thm_rmt.afk.message.23=Are you doing your homework?
+thm_rmt.afk.message.24=Don't forget to flush!
+thm_rmt.afk.message.25=Are you lost?
+thm_rmt.afk.message.26=Don't make this a habit!
+thm_rmt.afk.message.27=Well... This is awkward.
+thm_rmt.afk.message.28=Are you still there?
+thm_rmt.afk.message.29=I'm waiting for you!
+thm_rmt.afk.message.30=I'm getting lonely!
+thm_rmt.afk.message.31=I'm getting bored!
+thm_rmt.afk.message.32=Do I get your diamonds if you die?
+thm_rmt.afk.message.33=You must be solving the theory of relativity!
+thm_rmt.afk.message.34=I'm not a creeper, I promise!
+thm_rmt.afk.message.35=What does that cloud look like?
+thm_rmt.afk.message.36=What happens if I push this button?
+thm_rmt.afk.message.37=Did you leave the stove on?
+thm_rmt.afk.message.38=Did you just stare at a wall for 20 minutes?
+thm_rmt.afk.message.39=Are you lost in thought?
+thm_rmt.afk.message.40=Are you watching paint dry?
+
+
+## Rewards
+thm_rmt.reward.claimChunks=You have received §a%s§r claim chunks
+
+
+## TPA
+thm_rmt.message.tp_cooldown=TP in: %s
+thm_rmt.message.tpa.request=%s has requested to teleport to you. Open the RMT menu to accept.
+thm_rmt.message.error.tpa.noPlayer=§cTPA Canceled player is no longer online
+
+## Back and DBack
+thm_rmt.error.no_last_location=You have no saved last location!
+thm_rmt.error.no_death_location=You have no saved death location!
+
+## Claims
+thm_rmt.message.claim=§aClaim§f:§r %s
+thm_rmt.message.claim.unclaimed=§cUnclaimed§r
+thm_rmt.message.claim.success=Claimed %s, total Claim Chunks left %s
+thm_rmt.message.claim.success.adminForPlayer=Claimed %s for %s.
+thm_rmt.message.claim.error.inClaim=This chunk is already claimed!
+thm_rmt.message.claim.error.nearClaim=You can't create a claim within %s chunks of another claim!
+thm_rmt.message.claim.error.notNextToClaim=You have to claim a chunk next to your current claim or create a new claim within %s chunks of your current claim!
+thm_rmt.message.permission.fail.canBuild=You don't have permission to build in this claim!
+thm_rmt.message.permission.fail.canBreak=You don't have permission to break in this claim!
+thm_rmt.message.permission.fail.useItem=You don't have permission to use this item in this claim!
+thm_rmt.message.permission.fail.storageAccess=You don't have permission to open storage containers in this claim!
+thm_rmt.message.permission.fail.tableAccess=You don't have permission to open tables containers in this claim!
+thm_rmt.message.permission.fail.interactiveAccess=You don't have permission to interact with this item in this claim!
+thm_rmt.message.permission.fail.respawnBlockAccess=You don't have permission to interact with respawn blocks in this claim!
+thm_rmt.message.permission.fail.utilityAccess=You don't have permission to interact with utility blocks in this claim!
+thm_rmt.message.permission.fail.decorationAccess=You don't have permission to interact with decoration items in this claim!
+thm_rmt.message.permission.fail.miscAccess=You don't have permission to interact with this in this claim!
+thm_rmt.message.permission.fail.entityAccess=You don't have permission to interact with this entity in this claim!
+thm_rmt.message.permission.fail.setHome=You don't have permission to set a home in this claim!
+thm_rmt.message.permission.fail.setPlayerWarp=You don't have permission to set a player warp in this claim!
+thm_rmt.message.claim.error.noChunks=You don't have claim chunks left to start a new claim!
+thm_rmt.message.claim.error.noNether=You can't claim in the nether!
+thm_rmt.message.claim.error.noEnd=You can't claim in the end!
+thm_rmt.message.claim.error.endIsland=You can't claim the end island!
+thm_rmt.message.claim.error.disabled=Claiming is disabled!
+
+
+##Chest Sort
+thm_rmt.message.chest_sort.success=Container has been sorted!
+thm_rmt.message.chest_sort.no_items=No items to sort!
+
+## Lock
+thm_rmt.message.lock.error.canNotLock=You can't lock this block!
+thm_rmt.message.lock.success.unlock=Block has been unlocked!
+thm_rmt.message.lock.success.lock=Block has been locked!
+thm_rmt.message.lock.error.notOwner=You are not the owner of this block!
+thm_rmt.message.lock.error.alreadyTrusted=This player is already trusted!
+thm_rmt.message.lock.success.trusted=Player has been trusted!
+thm_rmt.message.lock.error.notTrusted=This player is not trusted!
+thm_rmt.message.lock.success.untrusted=Player has been untrusted!
+thm_rmt.message.lock.error.locked=This block is locked by %s
+thm_rmt.message.lock.error.placeNextToLocked=You can't place this block next to a locked block!
+
+## Elevator
+thm_rmt.error.elevator.mustBeAir=The block below the elevator must be air!
+thm_rmt.error.elevator.musBeSolid=There must be a solid block to teleport to under the elevator!
+thm_rmt.error.elevator.noUp=There is no elevator above this block!
+thm_rmt.error.elevator.noDown=There is no elevator below this block!
+
+## Homes
+thm_rmt.form.homes.remove.success=You have removed the home %s
+thm_rmt.form.homes.add.error.maxHomes=You have reached the maximum amount of homes you can set! (Max %s)
+
+## Admin
+thm_rmt.form.admin.gameRules.success=%s Gamerules have been updated!
+thm_rmt.form.admin.gameRules.noChange=No changes have been made to the gamerules!
+thm_rmt.form.admin.manageSpawn.success.default=Default Spawn has been set!
+thm_rmt.form.admin.manageSpawn.success.custom=Custom Spawn has been set!
+thm_rmt.form.admin.manageSpawn.success.first=First Spawn has been set!
+thm_rmt.form.admin.manageSpawn.success.remove.custom=Custom Spawn has been removed!
+thm_rmt.form.admin.manageSpawn.success.remove.first=First Spawn has been removed!
+thm_rmt.admin.manageWarps.error.invalidName=Invalid warp name!
+thm_rmt.admin.manageWarps.success.nameChanged=%s warp name has been changed to %s
+thm_rmt.admin.manageWarps.success.locationChanged=%s warp location has been changed to %s
+thm_rmt.admin.manageWarps.success.deleted=%s warp has been deleted!
+thm_rmt.form.admin.manageWarps.add.success=%s warp has been added!
+thm_rmt.success.rank_given=Rank %s has been given to %s
+thm_rmt.success.rank_removed=Rank %s has been removed from %s
+thm_rmt.message.permission.fail.adminClaim=Only Admins can use the Admin Claim Flag!
+thm_rmt.message.adminClaimFlag.alreadyHave=You already have the Admin Claim Flag!
+thm_rmt.message.adminClaimFlag.give=You have received the Admin Claim Flag!
+thm_rmt.message.claim.success.adminClaim=You have created an Admin Claim at %s!
+
+## Moderation
+thm_rmt.moderation.warn.success=Player has been warned!
+thm_rmt.moderation.warn=§cWARN§f: §bYou have been warned for §r%s§r §aCase ID: §r%s
+
+## Commands
+thm_rmt.error.rtp_nether_disabled=Random teleport in the nether is disabled!
+thm_rmt.error.rtp_end_disabled=Random teleport in the end is disabled!
+thm_rmt.error.rtp_cooldown.nether=You can't random teleport in the nether for another %s seconds!
+thm_rmt.error.rtp_cooldown.end=You can't random teleport in the end for another %s seconds!
+thm_rmt.error.rtp_cooldown.overworld=You can't random teleport in the overworld for another %s seconds!
+
+thm_rmt.tpa.request=§e%s §bhas requested to teleport to you. §7Open the RMT menu to accept.§r
+thm_rmt.tpa.here_request=§e%s §bhas requested you to teleport to them. §7Open the RMT menu to accept.§r
+thm_rmt.tpa.sent=§bYou have sent a request to teleport to §e%s§r
+thm_rmt.tpa.here_sent=§bYou have sent a request to teleport §e%s §bto you§r
+thm_rmt.tpa.expired=§cYour TPA request to §e%s §chas expired§r
+thm_rmt.tpa.here_expired=§cYour TPHERE request to §e%s §chas expired§r
+thm_rmt.tpa.delete.request=§cYour TPA request to §e%s §chas been deleted§r
+thm_rmt.tpa.here_delete.request=§cYour TPHERE request to §e%s §chas been deleted§r
+thm_rmt.tpa.accepted=§bYou have accepted the TPA request from §e%s§r
+thm_rmt.tpa.here_accepted=§bYou have accepted the TPHERE request from §e%s§r
+thm_rmt.tpa.accepted.sender=§e%s §bhas accepted your TPA request§r
+thm_rmt.tpa.here_accepted.sender=§e%s §bhas accepted your TPHERE request§r
+
+thm_rmt.tpa.denied=§cYou have denied the TPA request from §e%s§r
+thm_rmt.tpa.here_denied=§cYou have denied the TPHERE request from §e%s§r
+thm_rmt.tpa.delete.sent=§cYou have deleted the TPA request to §e%s§r
+thm_rmt.tpa.here_delete.sent=§cYou have deleted the TPHERE request to §e%s§r
+
+thm_rmt.tpa.delete.sent.all=§cYou have deleted all sent TPA requests§r
+thm_rmt.tpa.here_delete.sent.all=§cYou have deleted all sent TPHERE requests§r
+thm_rmt.tpa.delete.all=§cYou have deleted all recieved TPA requests§r
+thm_rmt.tpa.here_delete.all=§cYou have deleted all recieved TPHERE requests§r
+
+
+thm_rmt.form.main.cancel_tp=You have canceled the teleport§r
+
+## Holograms
+thm_rmt.error.not_mod.hologram=You need to be a moderator/admin to create holograms!
+thm_rmt.error.hologram_limit=You have reached the hologram limit!
+thm_rmt.error.hologram_radius=You can't place a hologram here, it's too close to other holograms! Limit is %1 in a %2 block radius
+##  ------------------------------------------------------ Text ------------------------------------------------------ ##
+thm_rmt.date_time.year=%s year,
+thm_rmt.date_time.years=%s years,
+thm_rmt.date_time.month=%s month,
+thm_rmt.date_time.months=%s months,
+thm_rmt.date_time.day=%s day,
+thm_rmt.date_time.days=%s days,
+thm_rmt.date_time.hour=%s hour,
+thm_rmt.date_time.hours=%s hours,
+thm_rmt.date_time.minute=%s minute,
+thm_rmt.date_time.minutes=%s minutes,
+thm_rmt.date_time.second=%s second
+thm_rmt.date_time.seconds=%s seconds
+thm_rmt.color.minecoin_gold=Minecoin Gold
+
+thm_rmt.commands.interactive.teleportPlayer=Teleport Player
+thm_rmt.commands.interactive.addRemoveItem=Add/Remove Item
+thm_rmt.commands.interactive.editScore=Edit Score
+thm_rmt.commands.interactive.playSound=Play Sound
+thm_rmt.commands.interactive.spawnParticle=Spawn Particle
+thm_rmt.commands.interactive.sendMessage=Send Message
+thm_rmt.commands.interactive.warpPlayer=Warp Player
+thm_rmt.commands.interactive.giveKit=Give Kit
+thm_rmt.commands.interactive.editRank=Edit Rank
+thm_rmt.commands.interactive.editHomes=Edit Homes
+thm_rmt.commands.interactive.editClaimBlocks=Edit Claim Blocks
+thm_rmt.commands.interactive.runCommand=Run Command
+
+thm_rmt.rank.give_type.manual=Manual
+thm_rmt.rank.give_type.playtime=Playtime
+thm_rmt.rank.give_type.kills=Player Kills
+thm_rmt.rank.give_type.monster_kills=Monster Kills
+thm_rmt.rank.give_type.deaths=Deaths
+thm_rmt.rank.give_type.score=Score
+thm_rmt.rank=Rank
+thm_rmt.gamemode=Gamemode
+
+thm_rmt.permissions.canBuild=Build
+thm_rmt.permissions.canBreak=Break
+thm_rmt.permissions.useItem=Use Item
+thm_rmt.permissions.storageAccess=Storage Access
+thm_rmt.permissions.tableAccess=Table Access
+thm_rmt.permissions.interactiveAccess=Interactive Access
+thm_rmt.permissions.respawnBlockAccess=Respawn Block Access
+thm_rmt.permissions.utilityAccess=Utility Access
+thm_rmt.permissions.decorationAccess=Decoration Access
+thm_rmt.permissions.entityAccess=Entity Interaction
+thm_rmt.permissions.miscAccess=Misc Access
+thm_rmt.permissions.setHome=Set Home
+thm_rmt.permissions.setPlayerWarp=Set Player Warp
+
+thm_rmt.flags.entitySpawn=Monster Spawn
+thm_rmt.flags.explosion=Explosion
+thm_rmt.flags.entityDamage=Entity Damage
+thm_rmt.flags.playerDamage=Player Damage
+
+thm_rmt.permission.none=None
+thm_rmt.permission.trusted=Trusted Players
+thm_rmt.permission.rank=Trusted Ranks
+thm_rmt.permission.rank_trusted=Trusted Players and Ranks
+thm_rmt.permission.all=All Players
+
+
+##--------------------- Forms ---------------------##
+
+
+thm_rmt.form.error.title=§4Error!
+thm_rmt.form.confirm.title=Are you sure?
+thm_rmt.form.input.title=Input Form
+thm_rmt.form.itemID=Item ID
+thm_rmt.form.itemID.placeholder=Enter item ID, e.g. minecraft:stone or stone
+thm_rmt.form.itemAmount=Item Amount
+thm_rmt.form.chunks=Claim Chunks
+thm_rmt.form.chunks.placeholder=Enter amount of claim chunks to add/remove (negative to remove)
+thm_rmt.error.invalid_number=Invalid number entered!
+
+
+## Main Menu
+thm_rmt.form.main.title=Realm Management Tool Menu
+thm_rmt.form.main.body.1=Wecome to the Realm Management Tool, here you can manage your realm/world, view stats, teleport, manage players, warps, homes, ranks and more. Please read the guide at the bottom of the menu for more information.
+thm_rmt.form.main.body.2=To change the settings you need have the %1 Rank, or have the OP tag, either have another %1 give you the %1 Rank, or if you are an operator run a command in chat /tag @s add op (in the future when we get access to checking for OP this will override the op check)
+thm_rmt.form.main.body.3=If you would like custom text for this menu, you cen set this in the Admin Menu.
+
+thm_rmt.form.main.button.profile=Profile
+thm_rmt.form.main.button.accecpt_tpa.1=Accept TPA
+thm_rmt.form.main.button.accecpt_tpa.2=From: %s
+thm_rmt.form.main.button.spawn=Spawn
+thm_rmt.form.main.button.commands=Commands
+thm_rmt.form.main.button.warps=Warps
+thm_rmt.form.main.button.homes=Homes
+thm_rmt.form.main.button.playerwarps=Player Warps
+thm_rmt.form.main.button.moderator=Moderation
+thm_rmt.form.main.button.admin=Administration
+thm_rmt.form.main.button.guide=Guide
+thm_rmt.form.main.button.changelog=Changelog
+thm_rmt.form.main.button.claim=Manage Claim
+thm_rmt.form.main.button.cancel_tp=Cancel TP
+
+## Claim
+thm_rmt.form.claim.title=Manage Claim
+thm_rmt.form.claim.body=Here you can manage your claims, view your claim chunks, sub group names, trusted list, permissions and claim options.
+thm_rmt.form.claim.overworld.title=§2Overworld Claim§r
+thm_rmt.form.claim.nether.title=§4Nether Claim§r
+thm_rmt.form.claim.end.title=§5End Claim§r
+thm_rmt.form.claim.claimName=§aClaim Name§r: %s
+thm_rmt.form.claim.chunks=§dTotal Claim Chunks§r: %s
+thm_rmt.form.claim.subGroupNames=§eSub Group Names§r:
+thm_rmt.form.claim.trusted=§cTrusted Players§r:
+thm_rmt.form.claim.trustedRanks=§cTrusted Ranks§r:
+thm_rmt.form.claim.permissions=§bClaim Permissions§r:
+thm_rmt.form.claim.claimFlags=§3Claim Options§r:
+thm_rmt.form.claim.overworld.none=§cNo Overworld Claim§r
+thm_rmt.form.claim.nether.none=§cNo Nether Claim§r
+thm_rmt.form.claim.end.none=§cNo End Claim§r
+
+thm_rmt.form.claim.permissions.build=Build %s
+thm_rmt.form.claim.permissions.break=Break %s
+thm_rmt.form.claim.permissions.useItem=Use Item %s
+thm_rmt.form.claim.permissions.storageAccess=Storage Access %s
+thm_rmt.form.claim.permissions.tableAccess=Table Access %s
+thm_rmt.form.claim.permissions.interactiveAccess=Interactive Access %s
+thm_rmt.form.claim.permissions.respawnBlockAccess=Respawn Block Access %s
+thm_rmt.form.claim.permissions.utilityAccess=Utility Access %s
+thm_rmt.form.claim.permissions.decorationAccess=Decoration Access %s
+thm_rmt.form.claim.permissions.entity=Entity Interaction %s
+thm_rmt.form.claim.permissions.miscAccess=Misc Access %s
+thm_rmt.form.claim.permissions.setHome=Set Home %s
+thm_rmt.form.claim.permissions.setPlayerWarp=Set Player Warp %s
+
+thm_rmt.form.claim.flags.entitySpawn=Monster Spawn %s
+thm_rmt.form.claim.flags.explosion=Explosion %s
+thm_rmt.form.claim.flags.entityDamage=Entity Damage %s
+thm_rmt.form.claim.flags.playerDamage=Player Damage %s
+
+thm_rmt.form.claim.input.claimName=Claim Name
+thm_rmt.form.claim.input.claimName.placeholder=Enter claim name
+thm_rmt.message.claim.nameChanged=Claim name has been changed to %s
+
+thm_rmt.form.claim.select.title=Select Claim
+thm_rmt.form.claim.permissions.title=Claim Permissions
+thm_rmt.message.claim.permissionsChanged=Claim permissions have been updated!
+thm_rmt.form.claim.button.changeName=Change Name
+thm_rmt.form.claim.button.editSubClaims=Edit Sub Claims
+thm_rmt.form.claim.button.editTrusted=Edit Trusted Players
+thm_rmt.form.claim.button.editRankTrusted=Edit Trusted Ranks
+thm_rmt.form.claim.button.editPermissions=Edit Permissions
+thm_rmt.form.claim.button.editFlags=Edit Claim Options
+thm_rmt.form.claim.button.removeClaims=Remove Claim Chunk
+thm_rmt.form.claim.edit.trusted.title=Edit Trusted Players
+thm_rmt.form.claim.edit.trustedRanks.title=Edit Trusted Ranks
+thm_rmt.form.claim.edit.trusted.body=Here you can add or remove trusted players from the claim.
+thm_rmt.form.claim.edit.trustedRanks.body=Here you can add or remove trusted ranks from the claim.
+thm_rmt.message.claim.trusted.added=Player %s has been added to the trusted list!
+thm_rmt.message.claim.trusted.removed=Player %s has been removed from the trusted list!
+thm_rmt.message.claim.trustedRanks.added=Rank %s has been added to the trusted list!
+thm_rmt.message.claim.trustedRanks.removed=Rank %s has been removed from the trusted list!
+thm_rmt.message.claim.trusted.alreadyTrusted=Player %s is already trusted!
+thm_rmt.message.claim.trustedRanks.already=Rank %s is already trusted!
+thm_rmt.form.claim.edit.trusted.select=Select Player to remove
+thm_rmt.message.claim.flagsChanged=Claim Options have been updated!
+thm_rmt.form.claim.edit.trusted.current=Current Trusted Players
+thm_rmt.form.claim.edit.trusted.add=Add Trusted Player
+thm_rmt.form.claim.edit.trusted.remove=Remove Trusted Player
+thm_rmt.form.claim.edit.trustedRanks.current=Current Trusted Ranks
+thm_rmt.form.claim.edit.trustedRanks.add=Add Trusted Rank
+thm_rmt.form.claim.edit.trustedRanks.remove=Remove Trusted Rank
+
+thm_rmt.form.claim.edit.pickClaimType.title=Select View Type
+thm_rmt.form.claim.edit.pickClaimType.body=You have §b%s§r chunks. Would you like to view a list of all chunks, input the chunk coordinates to select or select the chunk from your current position?
+thm_rmt.form.pickClaimType.button.select=Select Chunk From List
+thm_rmt.form.pickClaimType.button.input=Input Chunk Coordinates
+thm_rmt.form.pickClaimType.button.position=Select Chunk From Position
+thm_rmt.form.claim.edit.pickClaimType.input.x=Input Chunk X Coordinate
+thm_rmt.form.claim.edit.pickClaimType.input.z=Input Chunk Z Coordinate
+thm_rmt.form.claim.edit.pickClaimType.input.error=Invalid Chunk Coordinates (%s), you must only enter numbers!
+thm_rmt.form.claim.edit.pickClaimType.noClaims=You don't have a chunk with the coordinates (%s) in your claim!
+thm_rmt.form.claim.edit.pickClaimType.noClaimChunk=The chunk you are in (%s) is not part of this claim!
+
+thm_rmt.form.claim.deleteConfirm=Are you sure you want to delete the claim %s?
+thm_rmt.message.claim.deleted=Claim %s has been deleted!
+thm_rmt.form.claim.button.deleteClaim=Delete Whole Claim
+thm_rmt.message.claim.subClaims.none=No Sub Claims to edit!
+thm_rmt.form.claim.edit.subClaims.title=Edit Sub Claims
+thm_rmt.form.claim.edit.subClaims.body=Here you can add or remove sub claims from the claim and edit subclaim trusted players, permissions and options.
+thm_rmt.form.claim.edit.subClaims.current=Current Sub Claims
+thm_rmt.form.claim.edit.subClaims.create=Create New Sub Claim
+thm_rmt.form.claim.edit.subClaims.select.title=Select Sub Claim: Page %s
+thm_rmt.form.claim.edit.subClaims.select=Select Sub Claim to edit
+thm_rmt.form.claim.input.subClaimName=Sub Claim Name
+thm_rmt.form.claim.input.subClaimName.placeholder=Enter sub claim name
+thm_rmt.form.claim.edit.subClaims.editName=Edit Sub Claim Name
+thm_rmt.message.claim.subClaim.already=Sub Claim with the name %s already exists!
+thm_rmt.message.claim.subClaim.added=Sub Claim %s has been added!
+thm_rmt.form.claim.edit.subClaims.add=Add chunk to Sub Claim
+thm_rmt.form.claim.edit.subClaims.remove=Remove chunk from Sub Claim
+thm_rmt.form.claim.edit.selectClaim.title=Select Claim Chunk: Page %s
+thm_rmt.form.claim.edit.selectClaim.body=Select a claim chunk from your current claim.
+thm_rmt.message.claim.subClaim.alreadyIn=Chunk is already in a sub claim!
+thm_rmt.message.claim.subClaim.notIn=Chunk is not in a sub claim!
+thm_rmt.message.claim.subClaim.claim.removed=Chunk has been removed from the sub claim!
+thm_rmt.message.claim.subClaim.claim.added=Chunk has been added to the sub claim!
+thm_rmt.message.claim.subClaim.nameChanged=Sub Claim name has been changed to %s
+thm_rmt.message.subclaim.trusted.added=Player %s has been added to the trusted list of the sub claim!
+thm_rmt.message.subclaim.trusted.removed=Player %s has been removed from the trusted list of the sub claim!
+thm_rmt.message.subclaim.trustedRanks.added=Rank %s has been added to the trusted list of the sub claim!
+thm_rmt.message.subclaim.trustedRanks.removed=Rank %s has been removed from the trusted list of the sub claim!
+thm_rmt.message.subClaim.permissionsChanged=Sub Claim permissions have been updated!
+thm_rmt.message.subClaim.flagsChanged=Sub Claim Options have been updated!
+thm_rmt.form.subclaim.deleteConfirm=Are you sure you want to delete the sub claim %s?
+thm_rmt.message.subClaim.deleted=Sub Claim %s has been deleted!
+thm_rmt.form.claim.edit.subClaims.editTrusted=Edit Trusted Players
+thm_rmt.form.claim.edit.subClaims.editPermissions=Edit Sub Claim Permissions
+thm_rmt.form.claim.edit.subClaims.editFlags=Edit Sub Claim Options
+thm_rmt.form.claim.edit.subClaims.delete=Delete Sub Claim
+thm_rmt.form.claim.flags.title=Claim Options
+thm_rmt.form.claim.edit.subClaims.view=View Sub Claim
+thm_rmt.form.claim.edit.viewClaims.title=View Claims: Page %s
+thm_rmt.form.claim.edit.viewClaims.body=These are all the chunks in the selected claim/sub claim.
+thm_rmt.form.claim.edit.viewSubClaims=View Sub Claims Chunks
+thm_rmt.form.claim.button.viewClaims=View Claim Chunks
+thm_rmt.form.claim.removeClaim.deleteConfirm=This is the last chunk in the claim, deleting this will delete the whole claim, are you sure you want to delete the claim?
+thm_rmt.message.claim.claim.removed=Chunk has been removed from claim!
+thm_rmt.message.claim.notEdgeChunk=You can only chunks that are on the edge of the claim!
+thm_rmt.message.claim.connectingClaim=This chunk is a connecting chunk, removing this would split the claim, you can't remove it. Start from the outside edge of the claim to remove chunks!
+
+
+## Profile
+thm_rmt.form.profile.title=Profile
+thm_rmt.form.profile.body=This is your profile, you can view your stats, playtime, ranks, claim chunks, status, deaths and kills.
+thm_rmt.form.profile.joinDate=§bJoin Date: §r%s
+thm_rmt.form.profile.playtime=§bPlaytime: §r
+thm_rmt.form.profile.ranks=§bRanks:§r
+thm_rmt.form.profile.claimChunks=§bAvaliable Claim Chunks: §r%s
+thm_rmt.form.profile.status=§dStatus: §r%s
+thm_rmt.form.profile.deaths=§eDeaths: §r%s
+thm_rmt.form.profile.kills=§eKills: §r%s
+thm_rmt.form.profile.monsterKills=§eMonster Kills: §r%s
+thm_rmt.form.profile.no_ranks=§cNo Ranks§r
+
+
+## Online Players
+thm_rmt.form.online_players.title=Online Players
+thm_rmt.form.online_players.no_players=No other players online!
+thm_rmt.form.all_players.title=All Players
+thm_rmt.form.player_pick.title=Select Players
+
+## Player Search
+thm_rmt.form.player_search.title=Search Players
+thm_rmt.form.player_search.text_field=Enter search
+thm_rmt.form.player_search.placeholder=Name or part of name
+thm_rmt.form.player_search.no_results=No players found!
+thm_rmt.form.player_search.results.title=Search Results
+
+## Admin
+thm_rmt.form.admin.main.title=Admin Menu
+thm_rmt.form.admin.main.body=This is the admin menu, here you can manage the server, players, warps, announcements, ranks and settings.
+thm_rmt.form.admin.main.body.players=Manage Players, add, remove and edit player ranks, heal, feed and change gamemode.
+thm_rmt.form.admin.main.body.spawn=Manage Spawn, set default, custom and first spawn locations.
+thm_rmt.form.admin.main.body.warps=Manage Warps, view, add, edit and remove warps.
+thm_rmt.form.admin.main.body.announcements=Edit Announcements, view, add, edit and remove announcements.
+thm_rmt.form.admin.main.body.adminClaims=Edit and manage admin claims.
+thm_rmt.form.admin.main.body.world=Manage World, edit world settings.
+thm_rmt.form.admin.main.body.ranks=Manage Ranks, view, add, edit and remove ranks.
+thm_rmt.form.admin.main.body.settings=Settings, edit server settings.
+thm_rmt.form.admin.main.body.adminClaimFlag=Give yourself an admin claim flag. Use the claim flag to create or expand an Admin Claim. Sneak while using allows you to select a player to claim a chunk for them.
+thm_rmt.form.admin.main.body.menu=Change the main menu text to anything that better suits your world/realm.
+
+thm_rmt.form.admin.main.button.managePlayers=Manage Players
+thm_rmt.form.admin.main.button.manageSpawn=Manage Spawn
+thm_rmt.form.admin.main.button.manageWarps=Manage Warps
+thm_rmt.form.admin.main.button.adminClaims=Manage Admin Claims
+thm_rmt.form.admin.main.button.manageWorld=Manage World
+thm_rmt.form.admin.main.button.manageRanks=Manage Ranks
+thm_rmt.form.admin.main.button.settings=Settings
+thm_rmt.form.admin.main.button.adminClaimFlag=Give Admin Claim Flag
+thm_rmt.form.admin.main.button.menu=Edit Main Menu
+
+thm_rmt.form.admin.manageSpawn.title=Manage Spawn
+thm_rmt.form.admin.manageSpawn.description=Here you can manage and change the default spawn, custom spawn and first spawn locations.
+thm_rmt.form.admin.manageSpawn.description.default=§bDefault Spawn: §r%s
+thm_rmt.form.admin.manageSpawn.description.default.info=§7This is the normal default spawn location, players will spawn here if they don't have a custom spawn or first spawn set.
+thm_rmt.form.admin.manageSpawn.description.custom=§bCustom Spawn: §r%s
+thm_rmt.form.admin.manageSpawn.description.custom.none=§bCustom Spawn: §cNo Custom Spawn Set§r
+thm_rmt.form.admin.manageSpawn.description.custom.info=§7This is the custom spawn location, players will spawn here if you have set a custom spawn.§r
+thm_rmt.form.admin.manageSpawn.description.first=§bFirst Spawn: §r%s
+thm_rmt.form.admin.manageSpawn.description.first.none=§bFirst Spawn: §cNo First Spawn Set§r
+thm_rmt.form.admin.manageSpawn.description.first.info=§7This is the first spawn location, players will spawn here the first time they join the server.§r
+thm_rmt.form.admin.manageSpawn.info=Click the button to set a spawn at your location, custom and first spawn will also save rotation and view direction. Removing custom or first spawn will set it to the default spawn.
+thm_rmt.form.admin.manageSpawn.button.default=Set Default Spawn
+thm_rmt.form.admin.manageSpawn.button.custom=Set Custom Spawn
+thm_rmt.form.admin.manageSpawn.button.first=Set First Spawn
+thm_rmt.form.admin.manageSpawn.button.remove.custom=Remove Custom Spawn
+thm_rmt.form.admin.manageSpawn.button.remove.first=Remove First Spawn
+
+thm_rmt.form.admin.manageWarps.title=Manage Warps
+thm_rmt.form.admin.manageWarps.description=Here you can view, add, edit and remove warps.
+thm_rmt.form.admin.manageWarps.warps=§aWarps§r
+thm_rmt.form.admin.manageWarps.section.noWarps=§cNo Warps Set
+thm_rmt.form.admin.manageWarps.button.add=Add Warp
+thm_rmt.form.admin.manageWarps.button.warp=Edit: %s
+thm_rmt.form.admin.manageWarps.edit.title=Edit Warp %s
+thm_rmt.form.admin.manageWarps.edit.description=Here you can edit the warp name and location.
+thm_rmt.form.admin.manageWarps.edit.location=§eLocation§f:§r %s
+thm_rmt.form.admin.manageWarps.edit.button.name=Edit Name
+thm_rmt.form.admin.manageWarps.edit.button.type=Edit Type
+thm_rmt.form.admin.manageWarps.edit.button.location=Set Location
+thm_rmt.form.admin.manageWarps.edit.button.addRank=Add Rank
+thm_rmt.form.admin.manageWarps.edit.button.removeRank=Remove Rank
+thm_rmt.admin.manageWarps.error.rankAlreadyExists=Rank %s is already added to the warp!
+thm_rmt.form.admin.manageWarps.edit.name.title=Edit Warp Name
+thm_rmt.form.admin.manageWarps.edit.name.input=Enter new warp name
+thm_rmt.form.admin.manageWarps.changeLocation.confirm.title=Change Warp Location?
+thm_rmt.form.admin.manageWarps.changeLocation.confirm.body=Are you sure you want to change the warp location of %s to %s?
+thm_rmt.form.admin.manageWarps.delete.confirm.title=Delete Warp?
+thm_rmt.form.admin.manageWarps.delete.confirm=Are you sure you want to delete the warp %s?
+thm_rmt.form.admin.manageWarps.add.title=Add New Warp
+thm_rmt.form.admin.manageWarps.add.name=Enter warp name
+thm_rmt.form.admin.manageWarps.add.name.placeholder=Warp Name
+thm_rmt.form.admin.manageWarps.add.type=Warp type
+thm_rmt.form.admin.manageWarps.add.error.title=Error Adding Warp
+thm_rmt.form.admin.manageWarps.add.error.exists=Warp with the name §c%s§r already exists!
+thm_rmt.form.admin.manageWarps.add.error.colon=Name cannot contain a colon!
+thm_rmt.form.admin.manageWarps.edit.button.description=Edit Description
+thm_rmt.form.admin.manageWarps.edit.description.title=Edit Warp Description
+thm_rmt.form.admin.manageWarps.edit.description.input=Enter optional new warp description
+thm_rmt.form.admin.manageWarps.edit.description.input.placeholder=Warp Description
+thm_rmt.admin.manageWarps.success.descriptionChanged=Warp %s description has been changed to §r%s
+thm_rmt.admin.manageWarps.success.descriptionRemoved=Warp %s description has been removed!
+thm_rmt.admin.manageWarps.success.rankAdded=Rank %s has been added to the warp!
+thm_rmt.admin.manageWarps.success.rankRemoved=Rank %s has been removed from the warp!
+thm_rmt.form.admin.manageWarps.add.error.maxWarps=You have reached the maximum amount of warps you can set! (Max %s)
+thm_rmt.form.admin.manageWarps.edit.type.title=Edit Warp Type
+thm_rmt.form.admin.manageWarps.edit.type.input=Enter new warp type
+thm_rmt.form.admin.manageWarps.add.description=Warp Description
+thm_rmt.form.admin.manageWarps.add.description.placeholder=Enter optional warp description
+
+thm_rmt.admin.manageWarps.success.typeChanged.farming=Warp %s type has been changed to §rFarming
+thm_rmt.admin.manageWarps.success.typeChanged.mining=Warp %s type has been changed to §rMining
+thm_rmt.admin.manageWarps.success.typeChanged.shop=Warp %s type has been changed to §rShop
+thm_rmt.admin.manageWarps.success.typeChanged.arena=Warp %s type has been changed to §rArena
+thm_rmt.admin.manageWarps.success.typeChanged.mob=Warp %s type has been changed to §rMob
+thm_rmt.admin.manageWarps.success.typeChanged.building=Warp %s type has been changed to §rBuilding
+thm_rmt.admin.manageWarps.success.typeChanged.resource=Warp %s type has been changed to §rResource
+thm_rmt.admin.manageWarps.success.typeChanged.poi=Warp %s type has been changed to §rPoint of Interest
+thm_rmt.admin.manageWarps.success.typeChanged.other=Warp %s type has been changed to §rOther
+
+thm_rmt.warp.type.farming=Farming
+thm_rmt.warp.type.mining=Mining
+thm_rmt.warp.type.shop=Shop
+thm_rmt.warp.type.arena=Arena
+thm_rmt.warp.type.mob=Mob
+thm_rmt.warp.type.building=Building
+thm_rmt.warp.type.resource=Resource
+thm_rmt.warp.type.poi=Point of Interest
+thm_rmt.warp.type.other=Other
+
+thm_rmt.form.warp.description.farming=Here are all the warps related to farming, crops, animals, etc.
+thm_rmt.form.warp.description.mining=Here are all the warps related to mining, caves, ores, etc.
+thm_rmt.form.warp.description.shop=Here are all the warps related to shops, markets, etc.
+thm_rmt.form.warp.description.arena=Here are all the warps related to arenas, pvp, etc.
+thm_rmt.form.warp.description.mob=Here are all the warps related to mob farms, spawners, etc.
+thm_rmt.form.warp.description.building=Here are all the warps related to building, construction, etc.
+thm_rmt.form.warp.description.resource=Here are all the warps related to resource gathering, wood, stone, etc.
+thm_rmt.form.warp.description.poi=Here are all the warps related to points of interest, monuments, etc.
+thm_rmt.form.warp.description.other=Here are all the warps that don't fit into any other category.
+
+thm_rmt.form.warp.select=Click on a warp to view more information or teleport to it.
+
+thm_rmt.form.admin.main.button.announcement=Edit Announcements
+thm_rmt.form.admin.manageAnnouncements.description=Here you can view, add, edit and remove announcements.
+thm_rmt.form.admin.manageAnnouncements.announcements=§aAnnouncements§r
+thm_rmt.form.admin.manageAnnouncements.frequency=§bFrequency§f:§r %s seconds
+thm_rmt.form.admin.manageAnnouncements.section.noAnnouncements=§cNo Announcements Set
+thm_rmt.form.admin.manageAnnouncements.button.add=Add Announcement
+thm_rmt.form.admin.manageAnnouncements.button.announcement=Edit: %s
+thm_rmt.form.admin.manageAnnouncements.add.title=Set Announcement Name
+thm_rmt.form.admin.manageAnnouncements.add.name=Enter announcement name
+thm_rmt.form.homes.admin.manageAnnouncements.name.placeholder=Announcement Name
+thm_rmt.form.admin.manageAnnouncements.add.error.title=Error Adding Announcement
+thm_rmt.form.admin.manageAnnouncements.add.error.exists=Announcement with the name §c%s§r already exists!
+thm_rmt.form.admin.manageAnnouncements.edit.title=Edit Announcement %s
+thm_rmt.form.admin.manageAnnouncements.edit.description=Here you can edit the announcement name, message and frequency.
+thm_rmt.form.admin.manageAnnouncements.edit.announcement=§eAnnouncement§f:§r
+thm_rmt.form.admin.manageAnnouncements.edit_line.description=Edit lines of the announcement, you can add new lines, edit existing lines or delete lines.
+thm_rmt.form.admin.manageAnnouncements.button.edit_frequency=Edit Frequency
+thm_rmt.form.admin.manageAnnouncements.button.delete=Delete Announcement
+thm_rmt.form.admin.manageAnnouncements.delete.confirmation=Are you sure you want to delete this announcement?
+thm_rmt.form.admin.manageAnnouncements.edit_frequency.title=Edit Announcement Frequency
+thm_rmt.form.admin.manageAnnouncements.edit_frequency.frequency=Enter new frequency (seconds)
+thm_rmt.form.admin.manageAnnouncements.edit_frequency.error.title=Error Changing Frequency
+thm_rmt.form.admin.manageAnnouncements.edit_frequency.error.invalid=Invalid frequency entered!
+thm_rmt.form.admin.manageAnnouncements.edit_frequency.error.range=Frequency must be between 0.05 and 604800 seconds!
+
+thm_rmt.form.admin.editMenu.body=Edit the main menu text to anything that better suits your world/realm.~LINEBREAK~You can add and edit multiple lines, move them around and delete them. Clearing all text will reset the main menu to default.~LINEBREAK~~LINEBREAK~Each line is maximum of 100 characters, try not to add too many lines, as this will make it harder to navigate the menu.
+thm_rmt.form.admin.editMenu.body.current=Current Main Menu Text:
+thm_rmt.form.admin.editMenu.description=Edit lines, you can add new lines, edit existing lines or delete lines.
+
+thm_rmt.form.admin.ranks.title=Manage Ranks
+thm_rmt.form.admin.ranks.body=Here you can view, add, edit and remove ranks.
+thm_rmt.form.admin.ranks.section.noRanks=§cNo Ranks Set
+thm_rmt.form.admin.ranks.add.title=Add Rank
+thm_rmt.form.admin.ranks.add.name=Rank Name
+thm_rmt.form.admin.ranks.add.name.placeholder=Enter rank name
+thm_rmt.form.admin.ranks.add.colour=Rank Color
+thm_rmt.form.admin.ranks.add.colour.placeholder=Enter rank color
+thm_rmt.form.admin.ranks.add.giveType=Give Type
+thm_rmt.form.admin.ranks.add.priority=Priority
+thm_rmt.form.admin.ranks.add.priority.placeholder=Enter priority
+thm_rmt.form.admin.ranks.add.value=Give Value
+thm_rmt.form.admin.ranks.add.value.placeholder=Enter give value
+thm_rmt.form.admin.ranks.add.scoreboard=Scoreboard
+thm_rmt.form.admin.ranks.add.scoreboard.placeholder=Enter scoreboard if applicable
+thm_rmt.form.admin.ranks.add.error.name.undifined=Rank name cannot be undefined!
+thm_rmt.form.admin.ranks.add.error.name.exists=Rank with the name §c%s§r already exists!
+thm_rmt.form.admin.ranks.add.error.value.invalid=Invalid value entered!
+thm_rmt.form.admin.ranks.add.error.scoreboard.invalid=Invalid scoreboard entered!
+thm_rmt.form.admin.ranks.add.success=Rank %s has been added!
+thm_rmt.form.admin.ranks.edit.body=Here you can edit the rank name, color, give type, value and scoreboard.
+thm_rmt.form.admin.ranks.edit.button.update=Update Rank
+thm_rmt.form.admin.ranks.edit.button.remove=Remove Rank
+thm_rmt.form.admin.ranks.edit.remove.confirm=Are you sure you want to remove %s?
+thm_rmt.form.admin.ranks.update.title=Update Rank
+thm_rmt.form.admin.ranks.edit.title=Edit Rank
+thm_rmt.form.admin.ranks.update.success=Rank %s has been updated!
+thm_rmt.form.admin.ranks.button.add=Add Rank
+thm_rmt.form.admin.ranks.button.edit=Edit %s
+thm_rmt.form.admin.ranks.add.error.priority.invalid=Invalid priority entered!
+thm_rmt.form.admin.ranks.add.error.priority.exists=Rank with the priority §c%s§r already exists!
+thm_rmt.error.rankAdmin.notOp=You need to have the OP tag to add/remove the %s rank!
+thm_rmt.error.rankAdmin.no_ranks_to_remove=This player has no ranks to remove!
+
+thm_rmt.form.admin.manage_players.title=Manage Players
+thm_rmt.form.admin.manage_players.body=Here you can view and manage players ranks, add or remove claim chunks, heal, feed and change their Gamemode. If you need to moderate a player, go back to the moderation menu.
+thm_rmt.form.admin.manage_players.button.heal=Heal Player
+thm_rmt.form.admin.manage_players.button.feed=Feed Player
+thm_rmt.form.admin.manage_players.button.gamemode=Change Gamemode
+thm_rmt.form.admin.manage_players.button.selectRank=Select Rank
+thm_rmt.form.admin.manage_players.button.giveRank=Give Rank
+thm_rmt.form.admin.manage_players.button.removeRank=Remove Rank
+thm_rmt.form.admin.manage_players.button.editClaimChunks=Edit Claim Chunks
+thm_rmt.form.admin.manage_players.button.manageClaim=Manage Claim
+thm_rmt.form.admin.manage_players.heal.confirm=Are you sure you want to heal %s?
+thm_rmt.form.admin.manage_players.feed.confirm=Are you sure you want to feed %s?
+thm_rmt.success.gamemode.survival=Changed gamemode for %s to Survival!
+thm_rmt.success.gamemode.creative=Changed gamemode for %s to Creative!
+thm_rmt.success.gamemode.adventure=Changed gamemode for %s to Adventure!
+thm_rmt.success.gamemode.spectator=Changed gamemode for %s to Spectator!
+thm_rmt.success.rank_received=You have received the rank %s
+thm_rmt.success.rank_removed.player=You've had the rank %s removed
+thm_rmt.success.feed=You have fed %s
+thm_rmt.success.heal=You have healed %s
+thm_rmt.success.feed.player=You have been fed!
+thm_rmt.success.heal.player=You have been healed!
+
+thm_rmt.success.claim_chunks_given=You have given %s claim chunks to %s
+thm_rmt.success.claim_chunks_received=You have received %s claim chunks
+
+thm_rmt.form.whitelist.title=Whitelist
+thm_rmt.form.whitelist.body=Here you can view and manage the whitelist. There are currently §a%s§r players on the whitelist.
+thm_rmt.form.whitelist.button.view=View Whitelist
+thm_rmt.form.whitelist.button.add=Add Player
+thm_rmt.form.whitelist.button.remove=Remove Player
+thm_rmt.form.whitelist.select.title=Select Player
+thm_rmt.form.whitelist.select.body=Select a player to remove from the whitelist.
+thm_rmt.form.whitelist.remove.success=Player %s has been removed from the whitelist!
+thm_rmt.form.whitelist.playerName=Player Name
+thm_rmt.form.whitelist.playerName.placeholder=Enter player name
+thm_rmt.form.whitelist.add.success=Player %s has been added to the whitelist!
+
+## Moderation
+thm_rmt.spy=§eYou are in spy mode§r~LINEBREAK~§7Use the mod menu to toggle this off.
+thm_rmt.form.mainMod.title=Moderation Menu
+thm_rmt.form.mainMod.body=Here you can view, manage and moderate players.
+thm_rmt.form.mainMod.body.invsee=Invsee (View Inventory)
+thm_rmt.form.mainMod.body.invsee.info=§7View the inventory, hotbar, equipment and enderchest of a player. (due to limitations, you can only see what items are in the enderchest without item data such as enchantments)§r
+thm_rmt.form.mainMod.body.whitelist=Whitelist
+thm_rmt.form.mainMod.body.whitelist.info=§7View, add and remove players from the whitelist§r
+thm_rmt.form.mainMod.body.warn=Warn Player
+thm_rmt.form.mainMod.body.warn.info=§7Warn a player for breaking the rules. If they are offline, they will see the warn when they join§r
+thm_rmt.form.mainMod.body.kick=Kick Player
+thm_rmt.form.mainMod.body.kick.info=§7Kick a player~LINEBREAK~Kicking a player on a world will require the world to be restarted before they can rejoin, realms they can join straight back.§r
+thm_rmt.form.mainMod.body.tempBan=Temp Ban Player
+thm_rmt.form.mainMod.body.tempBan.info=§7Temporarily ban a player§r
+thm_rmt.form.mainMod.body.ban=Ban Player
+thm_rmt.form.mainMod.body.ban.info=§7Permanently ban a player~LINEBREAK~§cThis will purge all data of that player other than the perm ban!§r
+thm_rmt.form.mainMod.body.unban=Unban Player
+thm_rmt.form.mainMod.body.unban.info=§7Unban a player, this will set all active bans duration to the current time lapsed§r
+thm_rmt.form.mainMod.body.viewPunishments=View Punishments
+thm_rmt.form.mainMod.body.viewPunishments.info=§7View all active and past punishments for all players~LINEBREAK~If player has been permanently banned, the only punishment data remaining will be the ban.§r
+thm_rmt.form.mainMod.body.gameMode=Toggle Gamemode
+thm_rmt.form.mainMod.body.gameMode.info=Toggle your gamemode between survival and creative.
+thm_rmt.form.mainMod.body.spy=Toggle Spy Mode
+thm_rmt.form.mainMod.body.spy.info=Toggle spy mode on/off, this will make you invisable to other players, including held items and armor.
+
+thm_rmt.form.mainMod.button.invsee=Invsee
+thm_rmt.form.mainMod.button.whitelist=Whitelist
+thm_rmt.form.mainMod.button.enderSee=Endersee
+thm_rmt.form.mainMod.button.warn=Warn
+thm_rmt.form.mainMod.button.kick=Kick
+thm_rmt.form.mainMod.button.tempBan=Temp Ban
+thm_rmt.form.mainMod.button.ban=Ban
+thm_rmt.form.mainMod.button.unban=Unban
+thm_rmt.form.mainMod.button.spy=Toggle Spy Mode
+thm_rmt.form.mainMod.button.gameMode.survival=Set Survival
+thm_rmt.form.mainMod.button.gameMode.creative=Set Creative
+thm_rmt.form.mainMod.button.bannedItems=Banned Items
+
+thm_rmt.mod.player_list.title=Player List
+thm_rmt.mod.player_list.body=Here you can view all players that have joined.
+thm_rmt.mod.player_list.options.title=Player Options
+thm_rmt.mod.player_list.options.body=Here you can view and manage the player.
+thm_rmt.mod.player_list.button.options.tp=Teleport to Player
+thm_rmt.mod.player_list.button.options.tp.here=Teleport Player to You
+
+thm_rmt.success.tp=Teleported to %s
+thm_rmt.success.tp_here=Teleported %s to you
+
+thm_rmt.form.warn.reason=Warn Reason
+thm_rmt.form.warn.reason.placeholder=Enter reason for warning
+thm_rmt.error.warn.no_reason=You must enter a reason for the warn!
+thm_rmt.success.warn=You have warned §b%s§r. Reason: §a%s§r. Case ID: §e%s§r
+
+thm_rmt.form.kick.reason=Kick Reason
+thm_rmt.form.kick.reason.placeholder=Enter reason for kicking
+thm_rmt.error.kick.no_reason=You must enter a reason for the kick!
+thm_rmt.success.kick=You have kicked §b%s§r. §aReason§r: %s. §eCase ID§r: %s. If this is a world, it will need to be restarted before they can rejoin.
+thm_rmt.success.tempBan=You have temporarily banned §b%s§r for §d%s§r. §aReason§r: %s. §eCase ID§r: %s. If this is a world, it will need to be restarted before they can rejoin after their ban time.
+
+thm_rmt.form.tempBan.reason=Ban Reason
+thm_rmt.form.tempBan.reason.placeholder=Enter reason for banning
+thm_rmt.form.tempBan.duration.days=Days Duration
+thm_rmt.form.tempBan.duration.hours=Hours Duration
+thm_rmt.form.tempBan.duration.minutes=Minutes Duration
+thm_rmt.form.tempBan.duration.days.placeholder=Enter days
+thm_rmt.form.tempBan.duration.hours.placeholder=Enter hours
+thm_rmt.form.tempBan.duration.minutes.placeholder=Enter minutes
+thm_rmt.error.tempBan.no_data=You must enter a reason and duration for the ban!
+thm_rmt.error.tempBan.no_duration=You must enter a duration for the ban, days, hours and/or minutes!
+
+thm_rmt.form.ban.reason=Ban Reason
+thm_rmt.form.ban.reason.placeholder=Enter reason for banning
+thm_rmt.error.ban.no_reason=You must enter a reason for the ban!
+thm_rmt.success.ban=You have permanently banned §b%s§r. Reason: §a%s§r. Case ID: §e%s§r. We recommend contacting the world/realm/server owner to remove/block the player.
+thm_rmt.success.ban.announce=§c%s§r has been banned for §a%s§r.
+thm_rmt.success.kick.announce=§c%s§r has been kicked for §a%s§r.
+thm_rmt.success.warn.announce=§c%s§r has been warned for §a%s§r.
+thm_rmt.success.unban=You have unbanned §b%s§r
+thm_rmt.error.unban.no_bans=No active bans for selected player!
+thm_rmt.form.ban.confirm=Are you sure you want to ban %s permanently? Permanent bans will delete all data for the player saved to the world, including ranks, claims, locks and punishments (minus the ban)!
+
+thm_rmt.error.warn.admin=You can't warn a player with the rank %s
+thm_rmt.error.kick.admin=You can't kick a player with the rank %s
+thm_rmt.error.tempBan.admin=You can't temp ban a player with the rank %s
+thm_rmt.error.ban.admin=You can't ban a player with the rank %s
+
+thm_rmt.form.invsee.title=Invsee %s
+thm_rmt.form.invsee.body=Here you can view the inventory of %s, you can choose to view their main inventory, armor/equipment, hotbar or enderchest (due to limitations, you can only see what items are in the enderchest without item data such as enchantments).
+thm_rmt.form.invsee.body2=You can also clear the inventory, armor and offhand, hotbar or enderchest. "Clear All" will clear all items from the inventory, armor and hotbar.
+thm_rmt.form.invsee.button.inventory=View Inventory
+thm_rmt.form.invsee.button.armor=View Armor/Equipment
+thm_rmt.form.invsee.button.hotbar=View Hotbar
+thm_rmt.form.invsee.button.enderchest=View Enderchest
+
+thm_rmt.form.invsee.inventory.title=%s's Inventory
+thm_rmt.form.invsee.inventory.body=Here is the inventory of %s. Each button represents a slot in the inventory even if empty. You can click on a slot to view, edit or remove the item.
+
+
+thm_rmt.form.invsee.slot=Slot: %s
+thm_rmt.form.invsee.empty=Empty
+thm_rmt.form.invsee.item=§aItem:§r %s
+thm_rmt.form.invsee.amount=§eAmount:§r %s
+thm_rmt.form.invsee.durability=§cDurability:§r %s
+thm_rmt.form.invsee.itemComponents=§bItem Components§r
+thm_rmt.form.invsee.enchants=§dEnchantments§r
+
+thm_rmt.form.invsee.button.clear.inventory=Clear Inventory
+thm_rmt.form.invsee.button.clear.armor=Clear Armor
+thm_rmt.form.invsee.button.clear.hotbar=Clear Hotbar
+thm_rmt.form.invsee.button.clear.enderchest=Clear Enderchest
+thm_rmt.form.invsee.button.clear.all=Clear All
+
+thm_rmt.form.invsee.clear.inventory.confirm=Are you sure you want to clear %s's inventory slots?
+thm_rmt.form.invsee.clear.hotbar.confirm=Are you sure you want to clear %s's hotbar slots?
+thm_rmt.form.invsee.clear.armor.confirm=Are you sure you want to clear %s's armor slots?
+thm_rmt.form.invsee.clear.enderchest.confirm=Are you sure you want to clear %s's enderchest slots?
+thm_rmt.form.invsee.clear.all.confirm=Are you sure you want to clear all %s's inventory, armor and hotbar slots?
+
+thm_rmt.form.invsee.clear.enderchest.success=You have cleared %s's enderchest!
+thm_rmt.form.invsee.clear.inventory.success=You have cleared %s's inventory!
+thm_rmt.form.invsee.clear.hotbar.success=You have cleared %s's hotbar!
+thm_rmt.form.invsee.clear.armor.success=You have cleared %s's armor!
+thm_rmt.form.invsee.clear.all.success=You have cleared all %s's inventory, armor and hotbar!
+
+thm_rmt.form.invsee.error.invalidPlayer=Player is nolonger online!
+thm_rmt.form.invsee.item.title=Inventory Item
+thm_rmt.form.invsee.error.invalidItem=Invalid item!
+thm_rmt.form.invsee.button.replace=Replace Item
+thm_rmt.form.invsee.button.edit=Edit Item
+thm_rmt.form.invsee.button.clear=Clear Item
+thm_rmt.form.invsee.button.take=Take Item
+thm_rmt.form.invsee.take.confirm=Are you sure you want to take %s from %s's inventory?
+thm_rmt.form.invsee.error.itemEmpty=Slot is empty!
+thm_rmt.form.invsee.take.success=You have taken %s from %s's inventory!
+thm_rmt.form.invsee.item.clear.success=You have cleared %s from %s's inventory slot %s!
+
+test.command=This Add-On is licensed to Tomhmagic Creations Ltd.
+test.command2=This Add-On is not licensed.
+check.error=An error occurred while checking the license. %s
+
+thm_rmt.punishment.punishments.delete=Delete Punishments
+thm_rmt.punishment.punishments.delete.body.warn=Here you can select a punishment to delete. Below is a list of all warns by case ID. Selecting a button will delete it.
+thm_rmt.punishment.punishments.delete.body.kick=Here you can select a punishment to delete. Below is a list of all kicks by case ID. Selecting a button will delete it.
+thm_rmt.punishment.punishments.delete.body.ban=Here you can select a punishment to delete. Below is a list of all bans by case ID. Selecting a button will delete it.
+thm_rmt.punishment.punishments.delete.warn=Warn: %s
+thm_rmt.punishment.punishments.delete.kick=Kick: %s
+thm_rmt.punishment.punishments.delete.ban=Ban: %s
+
+thm_rmt.punishment.punishments.delete.button.warn=Delete a Warn
+thm_rmt.punishment.punishments.delete.button.kick=Delete a Kick
+thm_rmt.punishment.punishments.delete.button.ban=Delete a Ban
+
+thm_rmt.punishment.punishments.delete.warn.confirm=§cAre you sure you want to delete the warn with case ID §l§e%s§r§c?
+thm_rmt.punishment.punishments.delete.kick.confirm=§cAre you sure you want to delete the kick with case ID §l§e%s§r§c?
+thm_rmt.punishment.punishments.delete.ban.confirm=§cAre you sure you want to delete the ban with case ID §l§e%s§r§c?
+
+thm_rmt.punishment.punishments.delete.success.warn=You have deleted the warn with case ID %s
+thm_rmt.punishment.punishments.delete.success.kick=You have deleted the kick with case ID %s
+thm_rmt.punishment.punishments.delete.success.ban=You have deleted the ban with case ID %s
+
+
+thm_rmt.form.bannedItems.title=Banned Items
+thm_rmt.form.bannedItems.body=Here you can view and manage the banned items. You can add, remove and edit the banned items. Items on the banned list will be removed from the players inventory every tick.~LINEBREAK~~LINEBREAK~§cBanned Items:§r
+thm_rmt.form.bannedItems.noBannedItems=No Banned Items Set
+thm_rmt.form.bannedItems.add.title=Add Banned Item
+thm_rmt.form.bannedItems.add.text=Enter item name (with namespace)
+thm_rmt.form.bannedItems.add.placeholder=minecraft:bedrock
+thm_rmt.form.bannedItems.add.alreadyBanned=Item %s is already banned!
+thm_rmt.form.bannedItems.add.success=Item %s has been added to the banned items list!
+thm_rmt.form.bannedItems.remove.title=Remove Banned Item
+thm_rmt.form.bannedItems.remove.dropdown=Select Banned Item
+thm_rmt.form.bannedItems.remove.success=Item %s has been removed from the banned items list!
+
+## Punishment Data
+thm_rmt.punishment.caseID=§aCase ID§r: %s
+thm_rmt.punishment.time=§bTime§r: %s
+thm_rmt.punishment.reason=§dReason§r: %s
+thm_rmt.punishment.mod=§cModerator§r: %s
+thm_rmt.punishment.expires=§eExpires§r: %s
+thm_rmt.punishment.duration=§3Duration§r:
+thm_rmt.punishment.punishments=§cPunishments§r:
+thm_rmt.punishment.warns=Warns: %s
+thm_rmt.punishment.kicks=Kicks: %s
+thm_rmt.punishment.bans=Bans: %s
+thm_rmt.form.button.punishments=View Punishments
+thm_rmt.punishment.warns.title=Warns
+thm_rmt.punishment.kicks.title=Kicks
+thm_rmt.punishment.bans.title=Bans
+thm_rmt.punishment.no_warns=§aNo Warns§r
+thm_rmt.punishment.no_kicks=§aNo Kicks§r
+thm_rmt.punishment.no_bans=§aNo Bans§r
+
+## Homes
+thm_rmt.form.homes.description=Here you can view, manage and teleport to your homes. You can also teleport to your bed or respawn anchor if they are valid.
+thm_rmt.form.homes.section.bed=§bBed Location§f:§r %s
+thm_rmt.form.homes.section.respawnAnchor=§bRespawn Anchor Location§f:§r %s
+thm_rmt.form.homes.section.noBed=§bBed Location§f:§r §cNo Bed Set
+thm_rmt.form.homes.section.homes=§aHomes§r
+thm_rmt.form.homes.section.noHomes=§cNo Homes Set
+thm_rmt.form.homes.section.homes.location=§eLocation§f:§r %s
+thm_rmt.form.homes.section.homes.dimension=§dDimension§f:§r
+thm_rmt.form.homes.button.respawnAnchor=TP to Respawn Anchor
+thm_rmt.form.homes.button.bed=TP to Bed
+thm_rmt.form.homes.button.home=TP to %s
+thm_rmt.form.homes.button.add=Add Home
+thm_rmt.form.homes.button.remove=Remove Home
+thm_rmt.form.homes.remove.select=Select Home to Remove
+thm_rmt.form.homes.add.name=Home Name
+thm_rmt.form.homes.add.name.placeholder=Enter home name
+thm_rmt.form.homes.add.title=Add Home %s
+thm_rmt.form.homes.add.error.title=Error Adding Home
+thm_rmt.form.homes.add.error.exists=Home with the name §c%s§r already exists!
+thm_rmt.form.homes.add.success=Home %s has been added!
+
+## Warps
+thm_rmt.form.warp.title=Warps
+thm_rmt.form.warp.description=Here you can view and teleport to warps.
+thm_rmt.form.warp.section.noWarps=§cThere are no warps to display!
+thm_rmt.form.button.teleport=Teleport
+thm_rmt.form.warp.section.description=§bDescription§f:§r
+thm_rmt.form.warp.section.ranks=§dRanks§f:§r
+thm_rmt.form.warp.section.noRanks=§cNo Rank Ristrictions
+
+## Player Warps
+thm_rmt.form.playerWarps.title=Player Warps
+thm_rmt.form.playerWarps.description=Here you can view and teleport to player warps.
+thm_rmt.form.playerWarps.section.noWarps=§cThere are no player warps to display!
+thm_rmt.form.button.playerWarps.farming=Farming Warps
+thm_rmt.form.button.playerWarps.mining=Mining Warps
+thm_rmt.form.button.playerWarps.shop=Shop Warps
+thm_rmt.form.button.playerWarps.arena=Arena Warps
+thm_rmt.form.button.playerWarps.resources=Resource Warps
+thm_rmt.form.button.playerWarps.building=Building Warps
+thm_rmt.form.button.playerWarps.poi=POI Warps
+thm_rmt.form.button.playerWarps.mob=Mob Warps
+thm_rmt.form.button.playerWarps.other=Other Warps
+thm_rmt.form.button.playerWarps.manage=My Warps
+thm_rmt.form.button.playerWarps.sort=Sort Warps
+thm_rmt.form.button.playerWarps.sort.names=Sort by Names
+thm_rmt.form.button.playerWarps.sort.votes=Sort by Votes
+thm_rmt.form.button.playerWarps.vote.add=Vote for Warp
+thm_rmt.form.button.playerWarps.vote.remove=Remove Vote
+thm_rmt.form.button.playerWarps.warp.owner=§aOwner§f: %s§r
+thm_rmt.form.button.playerWarps.warp.votes=§bVotes§f: %s§r
+thm_rmt.form.button.playerWarps.warp.type=§dWarp Type§f:§r
+thm_rmt.form.button.playerWarps.warp.body=You are viewing a Player Warp. You are able to either add or remove a vote for this warp, or teleport to the warp.
+
+thm_rmt.form.playerWarps.vote.remove.success=You have removed your vote for %s
+thm_rmt.form.playerWarps.vote.add.success=You have voted for %s
+
+thm_rmt.form.playerWarps.manage.title=My Warps
+thm_rmt.form.playerWarps.manage.description=Here you can view, add, edit and remove your player warps.
+thm_rmt.form.playerWarps.manage.section.maxWarps=§cYou have reached the maximum amount of warps!§r : %s
+
+thm_rmt.form.button.playerWarps.edit=Edit Warp
+
+## Commands
+thm_rmt.form.commands.title=Commands
+thm_rmt.form.commands.body=Here you can view and run commands.
+thm_rmt.form.commands.types=§aTypes§r
+thm_rmt.form.commands.types.tpa=TPA/TPHERE
+thm_rmt.form.commands.types.tpa.info=§7Ask a player to teleport to them (TPA), ask a player to teleport to you (TPHERE) or respond to a TPA/TPHERE request.§r
+thm_rmt.form.commands.types.rtp=Random Teleport
+thm_rmt.form.commands.types.rtp.info=§7Teleport to a random location.§r
+thm_rmt.form.commands.types.back=TP Back
+thm_rmt.form.commands.types.back.info=§7Teleport to your last saved location.§r
+thm_rmt.form.commands.types.deathBack=Death Back
+thm_rmt.form.commands.types.deathBack.info=§7Teleport to your last death location.§r
+
+thm_rmt.form.commands.button.tpa=TPA/TPHERE
+thm_rmt.form.commands.button.rtp=Random Teleport
+thm_rmt.form.commands.button.back=TP Back
+thm_rmt.form.commands.button.deathBack=Death Back
+thm_rmt.form.commands.button.edit=Edit
+
+
+## TPA
+thm_rmt.form.tpa.main.title=TPA/TPHERE Requests
+thm_rmt.form.tpa.main.body.top=Here you can send and accept TPA and TPHERE requests.
+thm_rmt.form.tpa.main.body.tpa=TPA (Teleport Ask) - Ask a player to teleport to them.
+thm_rmt.form.tpa.main.body.tphere=TPHERE (Teleport Here) - Ask a player to teleport to you.
+
+thm_rmt.form.tpa.main.button.tpa_requests=TPA Requests : %s
+thm_rmt.form.tpa.main.button.tphere_requests=TPHERE Requests : %s
+thm_rmt.form.tpa.main.button.tpa_send=Send TPA
+thm_rmt.form.tpa.main.button.tphere_send=Send TPHERE
+thm_rmt.form.tpa.main.error.no_players=No other players online or no player selected!
+thm_rmt.form.tpa.main.error.already_sent=You have already sent a request to this player!
+thm_rmt.form.tpa.main.error.playerOffline=Player is offline!
+
+thm_rmt.form.tpa.requests.title=TPA Requests
+thm_rmt.form.tphere.requests.title=TPHERE Requests
+thm_rmt.form.tpa.sent.title=TPA Requests Sent
+thm_rmt.form.tphere.sent.title=TPHERE Requests Sent
+thm_rmt.form.tpa.requests.body=Here you can view and accept/reject TPA requests.
+
+thm_rmt.form.tpa.main.button.tpas_sent=TPA Requests Sent : %s
+thm_rmt.form.tpa.main.button.tpheres_sent=TPHERE Requests Sent : %s
+thm_rmt.form.tpaData.body.tpa_requests=You have %s TPA requests! Click on a request to accept or reject it.
+thm_rmt.form.tpaData.body.tpa_sent=You have sent %s TPA requests! Click on a request to cancel it.
+thm_rmt.form.tpaData.body.tphere_requests=You have %s TPHERE requests! Click on a request to accept or reject it.
+thm_rmt.form.tpaData.body.tphere_sent=You have sent %s TPHERE requests! Click on a request to cancel it.
+thm_rmt.form.tpaData.body.no_requests=No requests to display!
+
+thm_rmt.form.tpaData.options.tpa.recieved.title=TPA Request Options
+thm_rmt.form.tpaData.options.tpa.sent.title=TPA Sent Options
+thm_rmt.form.tpaData.options.tphere.recieved.title=TPHERE Request Options
+thm_rmt.form.tpaData.options.tphere.sent.title=TPHERE Sent Options
+
+thm_rmt.form.tpaData.options.body.tpa.recieved=Here you can accept or reject the TPA request from %s.
+thm_rmt.form.tpaData.options.body.tpa.sent=Here you can cancel the TPA request sent to %s.
+thm_rmt.form.tpaData.options.body.tphere.recieved=Here you can accept or reject the TPHERE request from %s.
+thm_rmt.form.tpaData.options.body.tphere.sent=Here you can cancel the TPHERE request sent to %s.
+
+thm_rmt.form.tpaData.options.button.deny.tpa=Deny TPA
+thm_rmt.form.tpaData.options.button.accept.tpa=Accept TPA
+thm_rmt.form.tpaData.options.button.accept.tphere=Accept TPHERE
+thm_rmt.form.tpaData.options.button.deny.tphere=Deny TPHERE
+thm_rmt.form.tpaData.options.button.clear.tpa=Clear TPA
+thm_rmt.form.tpaData.options.button.clear.tphere=Clear TPHERE
+
+thm_rmt.form.tpaData.button.clearAll=Clear All Requests
+
+
+
+## Common Buttons
+thm_rmt.form.button.back=Back
+thm_rmt.form.button.next=Next
+thm_rmt.form.button.previous=Previous
+thm_rmt.form.button.confirm=Confirm
+thm_rmt.form.button.cancel=Cancel
+thm_rmt.form.button.save=Save
+thm_rmt.form.button.search=Search
+thm_rmt.form.button.remove=Remove
+thm_rmt.form.button.add=Add
+thm_rmt.form.button.set=Set
+thm_rmt.form.button.delete=Delete
+thm_rmt.form.button.no=No
+thm_rmt.form.button.yes=Yes
+
+## Start Claim
+thm_rmt.form.claim.start.title=Start Claim
+
+## Hologram
+thm_rmt.form.hologram.title=New Hologram
+thm_rmt.form.hologram.button.edit_line=Edit Line %s
+thm_rmt.form.hologram.button.edit_lines=Edit Lines
+thm_rmt.form.hologram.button.edit=Edit Line
+thm_rmt.form.hologram.button.edit_commands=Edit Commands
+thm_rmt.form.hologram.button.adjust_hitbox=Adjust Hitbox
+thm_rmt.form.hologram.button.adjust_position=Adjust Position
+thm_rmt.form.hologram.button.add_line=Add Line
+thm_rmt.form.hologram.description=Editing Hologram, you can edit or add new lines, adjust the hitbox and position of the hologram or remove it.
+thm_rmt.form.hologram.description.lines=Total Lines: %s
+thm_rmt.form.hologram.description.commands=Total Commands: %s
+thm_rmt.form.hologram.description.hitbox=Hitbox: Width:%s Height:%s
+thm_rmt.form.hologram.description.position=Position: %s
+
+thm_rmt.form.hologram.edit_line.description=Edit lines of the hologram, you can add new lines, edit existing lines or delete lines.
+thm_rmt.form.hologram.button.clear_all_lines=Clear All Lines
+thm_rmt.form.hologram.button.clear_all_lines.confirmation=Are you sure you want to clear all lines?
+thm_rmt.form.hologram.button.move_up=Move Up
+thm_rmt.form.hologram.button.move_down=Move Down
+
+thm_rmt.form.hologram.button.delete=Delete Hologram
+thm_rmt.form.hologram.button.delete.confirmation=Are you sure you want to delete this hologram?
+
+thm_rmt.form.hologram.button.add_edit_line=Add/Edit Line
+thm_rmt.form.hologram.button.delete_line=Delete Line
+
+thm_rmt.form.hologram.button.adjust_hitbox.width=Width
+thm_rmt.form.hologram.button.adjust_hitbox.height=Height
+
+thm_rmt.form.hologram.error.not_owner=You are not the owner of this hologram!
+thm_rmt.form.hologram.button.adjust_position.x=X
+thm_rmt.form.hologram.button.adjust_position.y=Y
+thm_rmt.form.hologram.button.adjust_position.z=Z
+thm_rmt.form.hologram.button.adjust_position.success=Position has been adjusted!
+
+thm_rmt.form.hologram.button.delete.success=Hologram has been deleted!
+
+## Text Input
+thm_rmt.form.text_input.title=Text Input
+thm_rmt.form.text_input.description=Due to form textbox limitations, you can only enter 100 characters at a time, so this form will allow you to keep entering characters in 100 character sections. These sections will then be added together.
+thm_rmt.form.text_input.text=Text:
+thm_rmt.form.text_input.button.edit_section=Edit Section %s
+thm_rmt.form.text_input.button.add_section=Add Section
+thm_rmt.form.text_input.button.save=Complete Text Input
+thm_rmt.form.text_input.button.cancel=Cancel Text Input
+thm_rmt.form.text_input.button.clear=Clear Text
+thm_rmt.form.text_input.add_section=Add Text
+
+## Interactive Commands
+thm_rmt.form.interactiveCommands.title.0=Hit Commands
+thm_rmt.form.interactiveCommands.title.1=Interact Commands
+thm_rmt.form.interactiveCommands.description.0=Commands that will be executed when hit by a player.
+thm_rmt.form.interactiveCommands.description.1=Commands that will be executed when interacted with by a player.
+
+thm_rmt.form.interactiveCommands.button.edit=Edit Command %s
+thm_rmt.form.interactiveCommands.button.add=Add Command
+thm_rmt.form.interactiveCommands.button.clear=Clear Commands
+thm_rmt.form.interactiveCommands.button.clear.confirmation=Are you sure you want to clear all commands?
+thm_rmt.form.interactiveCommands.button.clear.success.0=Hit commands have been cleared!
+thm_rmt.form.interactiveCommands.button.clear.success.1=Interact commands have been cleared!
+
+thm_rmt.form.interactiveCommands.edit.title.0=Edit Hit Command
+thm_rmt.form.interactiveCommands.edit.title.1=Edit Interact Command
+
+thm_rmt.form.interactiveCommands.edit.description.new=Here you can add a new command, you need to select the type, then you can edit the command data and conditions.
+thm_rmt.form.interactiveCommands.edit.description.edit=Here you can edit the command data and conditions, you cannot edit the type, so to change the type, remove the command and add a new one.
+
+thm_rmt.form.interactiveCommands.edit.type.title=Select Command Type
+thm_rmt.form.interactiveCommands.edit.type.dropdown=Type
+thm_rmt.form.interactiveCommands.button.submit=Set Type
+
+## Settings
+thm_rmt.settings.title=Settings
+thm_rmt.settings.button.set=Change Settings
+thm_rmt.form.settings.button=Save Settings
+thm_rmt.settings.changed=Settings have been changed!
+thm_rmt.form.settings.title=Settings
+thm_rmt.form.settings.edit.title=Change Settings
+thm_rmt.form.settings.body.1=Here you can customise and toggle different features.
+thm_rmt.form.settings.body.2=All of these features are designed to work out of the box, but if you are creating a world or realm and want to more control, you can toggle them here.
+thm_rmt.form.settings.body.3=The setting catagories are listed below, you can click on a category to view/edit the settings for that category.
+
+thm_rmt.settings.rank.exists=A rank with the name %s already exists!
+
+thm_rmt.settings.category.general=General
+thm_rmt.settings.category.claiming=Claiming
+thm_rmt.settings.category.playerCommands=Player Commands
+thm_rmt.settings.category.afk=AFK System
+thm_rmt.settings.category.moderation=Moderation
+thm_rmt.settings.category.body=Your current settings for this category are:
+
+thm_rmt.settings.category.general.body=Here you can change the general settings for the Add-On.
+thm_rmt.settings.category.claiming.body=Here you can change the claiming settings for the Add-On.
+thm_rmt.settings.category.playerCommands.body=Here you can change the player commands settings for the Add-On.
+thm_rmt.settings.category.afk.body=Here you can change the AFK settings for the Add-On.
+thm_rmt.settings.category.moderation.body=Here you can change the moderation settings for the Add-On.
+
+thm_rmt.form.settings.messagePrefix=§dMessage Prefix§r
+thm_rmt.form.settings.giveRMTTool=§dGive RMT Tool§r
+thm_rmt.form.settings.tpTime=§dTeleport Timer§r
+thm_rmt.form.settings.rtpRadius=§dRTP Radius§r
+thm_rmt.form.settings.rtpCooldown=§dRTP Cooldown§r
+thm_rmt.form.settings.rtpNether=§dRTP in Nether?§r
+thm_rmt.form.settings.rtpEnd=§dRTP in End?§r
+thm_rmt.form.settings.announceWarn=§dAnnounce Warns?§r
+thm_rmt.form.settings.announceKick=§dAnnounce Kicks?§r
+thm_rmt.form.settings.announceBan=§dAnnounce Bans?§r
+thm_rmt.form.settings.disableClaims=§dDisable Claims?§r
+thm_rmt.form.settings.startingClaimChunks=§dStarting Claim Chunks§r
+thm_rmt.form.settings.claimChunkFrequency=§dClaim Chunk Earn Frequency§r
+thm_rmt.form.settings.claimChunkValue=§dClaim Chunk Earn Amount§r
+thm_rmt.form.settings.claimChunkMax=§dClaim Chunk Max§r
+thm_rmt.form.settings.adminRankName=§dAdmin Rank Name§r
+thm_rmt.form.settings.moderatorRankName=§dModerator Rank Name§r
+thm_rmt.form.settings.overworldClaimMinY=§dOverworld Claim Min Y§r
+thm_rmt.form.settings.overworldClaimMaxY=§dOverworld Claim Max Y§r
+thm_rmt.form.settings.netherClaimMinY=§dNether Claim Min Y§r
+thm_rmt.form.settings.netherClaimMaxY=§dNether Claim Max Y§r
+thm_rmt.form.settings.endClaimMinY=§dEnd Claim Min Y§r
+thm_rmt.form.settings.endClaimMaxY=§dEnd Claim Max Y§r
+thm_rmt.form.settings.claimSafeRadius=§dClaim Safe Radius§r
+thm_rmt.form.settings.claimNether=§dClaim Nether§r
+thm_rmt.form.settings.claimEnd=§dClaim The End§r
+thm_rmt.form.settings.netherLocked=§dNether Locked§r
+thm_rmt.form.settings.endLocked=§dEnd Locked§r
+thm_rmt.form.settings.purgeDays=§dPurge Days§r
+thm_rmt.form.settings.whitelist=§dWhitelist§r
+thm_rmt.form.settings.maintenanceMode=§dMaintenance Mode§r
+thm_rmt.form.settings.advancedInvSee=§dAdvanced Invsee§r
+thm_rmt.form.settings.hologramLimit=§dHologram Limit§r
+thm_rmt.form.settings.maxHolograms=§dMax Holograms§r
+thm_rmt.form.settings.modOnlyHolograms=§dMod/Admin Only Holograms§r
+thm_rmt.form.settings.hologramRadius=§dHologram Radius§r
+thm_rmt.form.settings.maxHomes=§dMax Homes§r
+thm_rmt.form.settings.maxPlayerWarps=§dMax Player Warps§r
+thm_rmt.form.settings.afkTime=§dAFK Time§r
+thm_rmt.form.settings.modAFK=§dMod AFK§r
+thm_rmt.form.settings.afkSpawn=§dAFK Spawn§r
+thm_rmt.form.settings.afkSpawnRadius=§dAFK Spawn Radius§r
+thm_rmt.form.settings.afkKick=§dAFK Kick§r
+thm_rmt.form.settings.modGamemode=§dMod Gamemode§r
+thm_rmt.form.settings.spyCreative=§dSpy Creative§r
+thm_rmt.form.settings.disableSpawn=§dDisable Spawn§r
+thm_rmt.form.settings.disableWarps=§dDisable Warps§r
+thm_rmt.form.settings.disableTPA=§dDisable TPA/TPHERE§r
+thm_rmt.form.settings.disableRTP=§dDisable RTP§r
+thm_rmt.form.settings.disableBack=§dDisable TP Back§r
+thm_rmt.form.settings.disableDeathBack=§dDisable Death Back§r
+thm_rmt.form.settings.bannedItemsFrequency=§dBanned Items Frequency§r
+
+
+
+thm_rmt.form.settings.messagePrefix.info=§7Prefix for all messages.§r
+thm_rmt.form.settings.giveRMTTool.info=§7Give the RMT Tool to players when they join the world.§r
+thm_rmt.form.settings.tpTime.info=§7Time in seconds before teleporting.§r
+thm_rmt.form.settings.rtpRadius.info=§7Radius in blocks for RTP.§r
+thm_rmt.form.settings.rtpCooldown.info=§7Cooldown in seconds for all RTPs: cooldown is individual to each dimension§r
+thm_rmt.form.settings.rtpNether.info=§7Allow RTP in Nether.§r
+thm_rmt.form.settings.rtpEnd.info=§7Allow RTP in End.§r
+thm_rmt.form.settings.announceWarn.info=§7Announce Warns publicly.§r
+thm_rmt.form.settings.announceKick.info=§7Announce Kicks publicly.§r
+thm_rmt.form.settings.announceBan.info=§7Announce Bans publicly.§r
+thm_rmt.form.settings.disableClaims.info=§7Disable claims for all players. This will turn off all claim protections other than Admin claims. It will also prevent new claims from being made with the Claims Flag. Players will not be able to manage their claim.§r
+thm_rmt.form.settings.startingClaimChunks.info=§7Starting claim chunks for new players.§r
+thm_rmt.form.settings.claimChunkFrequency.info=§7Frequency in minutes for earning claim chunks.§r
+thm_rmt.form.settings.claimChunkValue.info=§7Amount of claim chunks earned. Set to 0 to disable Claim Chunk Rewards§r
+thm_rmt.form.settings.claimChunkMax.info=§7Maximum claim chunks a player can earn. This includes claim chunks they have ready to use or have already used.§r
+thm_rmt.form.settings.adminRankName.info=§7Display name of the Admin Rank.§r
+thm_rmt.form.settings.moderatorRankName.info=§7Display name of the Moderator Rank.§r
+thm_rmt.form.settings.overworldClaimMinY.info=§7Minimum Y level for claims in the Overworld.§r
+thm_rmt.form.settings.overworldClaimMaxY.info=§7Maximum Y level for claims in the Overworld.§r
+thm_rmt.form.settings.netherClaimMinY.info=§7Minimum Y level for claims in the Nether.§r
+thm_rmt.form.settings.netherClaimMaxY.info=§7Maximum Y level for claims in the Nether.§r
+thm_rmt.form.settings.endClaimMinY.info=§7Minimum Y level for claims in The End.§r
+thm_rmt.form.settings.endClaimMaxY.info=§7Maximum Y level for claims in The End.§r
+thm_rmt.form.settings.claimSafeRadius.info=§7The radius in chunks to which you cannot make a new claim next to another player's claim§r
+thm_rmt.form.settings.claimNether.info=§7Allow claiming in the Nether.§r
+thm_rmt.form.settings.claimEnd.info=§7Allow claiming in The End.§r
+thm_rmt.form.settings.netherLocked.info=§7Lock players from entering the Nether. Will teleport them to Spawn if they are in the Nether. Also prevents creating a new portal.§r
+thm_rmt.form.settings.endLocked.info=§7Lock players from entering The End. Will teleport them to Spawn if they are in the End. Also prevents opening a new portal.§r
+thm_rmt.form.settings.purgeDays.info=§7Real days before purging inactive player data.§r
+thm_rmt.form.settings.whitelist.info=§7Turn on the whitelist so only players on the whitelist can join.§r
+thm_rmt.form.settings.maintenanceMode.info=§7Turn on the maintenance mode so only players with the Admin/Moderator rank can join.§r
+thm_rmt.form.settings.advancedInvSee.info=§7Turn on the advenced inventory see system, allows for modifying and viewing online and offline player inventories.~LINEBREAK~§cWarning: If using this Add-On on a local world (not a realm), the host MUST have the Admin rank before turning this on! §7Admins are exempt from the system, and the system is unable to correctly save and load the host inventory due to the world closing when leaving on a local world.§r
+thm_rmt.form.settings.hologramLimit.info=§7Maximum number of holograms a player can place in the hologram radius, set to -1 to disable.§r
+thm_rmt.form.settings.maxHolograms.info=§7Maximum number of holograms a player can place, set to -1 to disable.§r
+thm_rmt.form.settings.modOnlyHolograms.info=§7Only allow Mods and Admins to place holograms.§r
+thm_rmt.form.settings.hologramRadius.info=§7The radius in blocks for how many holograms can be placed near each other. Mods/Admins override this.§r
+thm_rmt.form.settings.maxHomes.info=§7Maximum number of homes a player can have. Setting to 0 will disable the feature in the menu.§r
+thm_rmt.form.settings.maxPlayerWarps.info=§7Maximum number of player warps a player can have. Setting to 0 will disable the feature in the menu§r
+thm_rmt.form.settings.afkTime.info=§7Time in minutes before a player is marked as AFK, set to 0 to disable.§r
+thm_rmt.form.settings.modAFK.info=§7If Moderators are exempt from the AFK system. Note: Admins are always exempt.§r
+thm_rmt.form.settings.afkSpawn.info=§7If monsters can spawn around AFK players. If non afk players are also nearby, entities will still spawn.§r
+thm_rmt.form.settings.afkSpawnRadius.info=§7Radius in blocks around the AFK player that monsters cannot spawn.§r
+thm_rmt.form.settings.afkKick.info=§7Time in minutes before an AFK player is kicked, set to 0 to disable.§r~LINEBREAK~§cWarning: If using this Add-On on a local world (not a realm), kicks require the world to be restarted before the player can rejoin.§r
+thm_rmt.form.settings.modGamemode.info=§7If Moderators can change their gamemode between creative and survival.§r
+thm_rmt.form.settings.spyCreative.info=§7Spy mode puts player in creative and back to survival when turned off.
+thm_rmt.form.settings.disableSpawn.info=§7Disable the spawn command§r
+thm_rmt.form.settings.disableWarps.info=§7Disable all warps from the menu§r
+thm_rmt.form.settings.disableTPA.info=§7Disable TPA/TPHERE commands§r
+thm_rmt.form.settings.disableRTP.info=§7Disable RTP command§r
+thm_rmt.form.settings.disableBack.info=§7Disable TP Back command§r
+thm_rmt.form.settings.disableDeathBack.info=§7Disable Death Back command§r
+thm_rmt.form.settings.bannedItemsFrequency.info=§7Frequency in ticks for checking for banned items.§r
+
+##  ------------------------------------------------------ Guide ------------------------------------------------------ ##
+
+##Main form
+thm_rmt.form.guide.title=Realm Management Tool Guide
+thm_rmt.form.guide.welcome.1=Welcome to the §dRealm §fManagement §dTool§r Guide.
+thm_rmt.form.guide.version=§7Add-On Version§r: %s
+thm_rmt.form.guide.welcome.2=Here you will find all information needed for the Add-On, from how-to's, change logs and the roadmap.
+thm_rmt.form.guide.welcome.3=For more indepth information you can either, join us on §9Discord§r or visit our wiki at §ermt.wiki§r - which includes video tutorials.
+thm_rmt.form.guide.contents=§lContents:§r
+thm_rmt.form.guide.how_tos=§dHow To's§r - How to use the Add-On.
+thm_rmt.form.guide.roadmap=§dRoadmap§r - Our planned features.
+thm_rmt.form.guide.changelog=§dChange Log§r - Every time the Add-On is updated, all the details of the changes will be listed here.
+thm_rmt.form.guide.technical=§dTechnical Info§r - Information for players who want to customize or build functionality with command blocks.
+thm_rmt.form.guide.social=§eIf you have any questions, suggestions, or would like to talk to us about the Add-On, please join us on Discord:§r
+thm_rmt_form.guide.discord=§9https://discord.gg/tomhmagic§r
+
+thm_rmt.form.changeLog.title=Change Log
+
+thm_rmt.guide.button.how_tos=How To's
+thm_rmt.guide.button.faq=FAQ's
+thm_rmt.guide.button.changelog=Change Log
+thm_rmt.guide.button.roadmap=Roadmap
+thm_rmt.guide.button.settings=Settings
+thm_rmt.guide.button.hologram=Holograms
+thm_rmt.form.howTo.title=How To's
+thm_rmt.form.howTo.body=Most information is within each section of the menu, however, here are some additional guides to help you get started.
+
+
+thm_rmt.form.howTo.button.claims=Claims
+thm_rmt.form.howTo.button.spawn=Spawn
+thm_rmt.form.howTo.button.technical=Technical Info
+thm_rmt.form.howTo.button.elevators=Elevators
+thm_rmt.form.howTo.button.jumppads=Jump Pads
+thm_rmt.form.howTo.button.items=Custom Items
+thm_rmt.form.howTo.button.hologram=Holograms
+
+
+thm_rmt.form.guide.roadmap.title=Roadmap
+
+thm_rmt.how_tos.button.claims=Claims
+thm_rmt.how_tos.button.profile=Profile
+thm_rmt.how_tos.button.spawn=Spawn
+thm_rmt.how_tos.button.commands=Commands
+thm_rmt.how_tos.button.homes=Homes
+thm_rmt.how_tos.button.warps=Warps
+thm_rmt.how_tos.button.holograms=Holograms
+thm_rmt.how_tos.button.ranks=Ranks
+thm_rmt.how_tos.button.players=Players
+thm_rmt.how_tos.button.technical=Technical Info
+

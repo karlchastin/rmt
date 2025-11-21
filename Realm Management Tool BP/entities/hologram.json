@@ -1,0 +1,248 @@
+{
+  "format_version": "1.21.60",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "thm_rmt:hologram",
+      "is_summonable": true,
+      "is_spawnable": false,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "thm_rmt:full_name": {
+        "minecraft:nameable": {
+          "allow_name_tag_renaming": false,
+          "always_show": true
+        }
+      },
+      "thm_rmt:half_name": {
+        "minecraft:nameable": {
+          "allow_name_tag_renaming": false,
+          "always_show": false
+        }
+      },
+      "thm_rmt:size_w1_h1": {
+        "minecraft:custom_hit_test": {
+          "hitboxes": [{ "width": 1, "height": 1, "pivot": [0, 0.5, 0] }]
+        }
+      },
+      "thm_rmt:size_w1_h2": {
+        "minecraft:custom_hit_test": {
+          "hitboxes": [{ "width": 1, "height": 2, "pivot": [0, 0.5, 0] }]
+        }
+      },
+      "thm_rmt:size_w1_h3": {
+        "minecraft:custom_hit_test": {
+          "hitboxes": [{ "width": 1, "height": 3, "pivot": [0, 0.5, 0] }]
+        }
+      },
+      "thm_rmt:size_w1_h4": {
+        "minecraft:custom_hit_test": {
+          "hitboxes": [{ "width": 1, "height": 4, "pivot": [0, 0.5, 0] }]
+        }
+      },
+      "thm_rmt:size_w1_h5": {
+        "minecraft:custom_hit_test": {
+          "hitboxes": [{ "width": 1, "height": 5, "pivot": [0, 0.5, 0] }]
+        }
+      },
+      "thm_rmt:size_w2_h1": {
+        "minecraft:custom_hit_test": {
+          "hitboxes": [{ "width": 2, "height": 1, "pivot": [0, 0.5, 0] }]
+        }
+      },
+      "thm_rmt:size_w2_h2": {
+        "minecraft:custom_hit_test": {
+          "hitboxes": [{ "width": 2, "height": 2, "pivot": [0, 0.5, 0] }]
+        }
+      },
+      "thm_rmt:size_w2_h3": {
+        "minecraft:custom_hit_test": {
+          "hitboxes": [{ "width": 2, "height": 3, "pivot": [0, 0.5, 0] }]
+        }
+      },
+      "thm_rmt:size_w2_h4": {
+        "minecraft:custom_hit_test": {
+          "hitboxes": [{ "width": 2, "height": 4, "pivot": [0, 0.5, 0] }]
+        }
+      },
+      "thm_rmt:size_w2_h5": {
+        "minecraft:custom_hit_test": {
+          "hitboxes": [{ "width": 2, "height": 5, "pivot": [0, 0.5, 0] }]
+        }
+      },
+      "thm_rmt:size_w3_h1": {
+        "minecraft:custom_hit_test": {
+          "hitboxes": [{ "width": 3, "height": 1, "pivot": [0, 0.5, 0] }]
+        }
+      },
+      "thm_rmt:size_w3_h2": {
+        "minecraft:custom_hit_test": {
+          "hitboxes": [{ "width": 3, "height": 2, "pivot": [0, 0.5, 0] }]
+        }
+      },
+      "thm_rmt:size_w3_h3": {
+        "minecraft:custom_hit_test": {
+          "hitboxes": [{ "width": 3, "height": 3, "pivot": [0, 0.5, 0] }]
+        }
+      },
+      "thm_rmt:size_w3_h4": {
+        "minecraft:custom_hit_test": {
+          "hitboxes": [{ "width": 3, "height": 4, "pivot": [0, 0.5, 0] }]
+        }
+      },
+      "thm_rmt:size_w3_h5": {
+        "minecraft:custom_hit_test": {
+          "hitboxes": [{ "width": 3, "height": 5, "pivot": [0, 0.5, 0] }]
+        }
+      },
+      "thm_rmt:size_w4_h1": {
+        "minecraft:custom_hit_test": {
+          "hitboxes": [{ "width": 4, "height": 1, "pivot": [0, 0.5, 0] }]
+        }
+      },
+      "thm_rmt:size_w4_h2": {
+        "minecraft:custom_hit_test": {
+          "hitboxes": [{ "width": 4, "height": 2, "pivot": [0, 0.5, 0] }]
+        }
+      },
+      "thm_rmt:size_w4_h3": {
+        "minecraft:custom_hit_test": {
+          "hitboxes": [{ "width": 4, "height": 3, "pivot": [0, 0.5, 0] }]
+        }
+      },
+      "thm_rmt:size_w4_h4": {
+        "minecraft:custom_hit_test": {
+          "hitboxes": [{ "width": 4, "height": 4, "pivot": [0, 0.5, 0] }]
+        }
+      },
+      "thm_rmt:size_w4_h5": {
+        "minecraft:custom_hit_test": {
+          "hitboxes": [{ "width": 4, "height": 5, "pivot": [0, 0.5, 0] }]
+        }
+      },
+      "thm_rmt:size_w5_h1": {
+        "minecraft:custom_hit_test": {
+          "hitboxes": [{ "width": 5, "height": 1, "pivot": [0, 0.5, 0] }]
+        }
+      },
+      "thm_rmt:size_w5_h2": {
+        "minecraft:custom_hit_test": {
+          "hitboxes": [{ "width": 5, "height": 2, "pivot": [0, 0.5, 0] }]
+        }
+      },
+      "thm_rmt:size_w5_h3": {
+        "minecraft:custom_hit_test": {
+          "hitboxes": [{ "width": 5, "height": 3, "pivot": [0, 0.5, 0] }]
+        }
+      },
+      "thm_rmt:size_w5_h4": {
+        "minecraft:custom_hit_test": {
+          "hitboxes": [{ "width": 5, "height": 4, "pivot": [0, 0.5, 0] }]
+        }
+      },
+      "thm_rmt:size_w5_h5": {
+        "minecraft:custom_hit_test": {
+          "hitboxes": [{ "width": 5, "height": 5, "pivot": [0, 0.5, 0] }]
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": { "family": ["hologram"] },
+      "minecraft:damage_sensor": {
+        "triggers": { "on_damage": { "filters": {} }, "deals_damage": "no" }
+      },
+      "minecraft:interact": { "interactions": [{ "swing": true }] },
+      "minecraft:health": { "value": 1, "max": 1 },
+      "minecraft:knockback_resistance": { "value": 1, "max": 1 },
+      "minecraft:push_through": { "value": 1 },
+      "minecraft:collision_box": { "width": 0.0, "height": 0.0 },
+      "minecraft:physics": { "has_gravity": false, "has_collision": false }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": { "component_groups": ["thm_rmt:size_w1_h1", "thm_rmt:full_name"] }
+      },
+      "thm_rmt:full_name": {
+        "add": { "component_groups": ["thm_rmt:full_name"] },
+        "remove": { "component_groups": ["thm_rmt:half_name"] }
+      },
+      "thm_rmt:half_name": {
+        "add": { "component_groups": ["thm_rmt:half_name"] },
+        "remove": { "component_groups": ["thm_rmt:full_name"] }
+      },
+      "thm_rmt:w1_h1": {
+        "add": { "component_groups": ["thm_rmt:size_w1_h1"] }
+      },
+      "thm_rmt:w1_h2": {
+        "add": { "component_groups": ["thm_rmt:size_w1_h2"] }
+      },
+      "thm_rmt:w1_h3": {
+        "add": { "component_groups": ["thm_rmt:size_w1_h3"] }
+      },
+      "thm_rmt:w1_h4": {
+        "add": { "component_groups": ["thm_rmt:size_w1_h4"] }
+      },
+      "thm_rmt:w1_h5": {
+        "add": { "component_groups": ["thm_rmt:size_w1_h5"] }
+      },
+      "thm_rmt:w2_h1": {
+        "add": { "component_groups": ["thm_rmt:size_w2_h1"] }
+      },
+      "thm_rmt:w2_h2": {
+        "add": { "component_groups": ["thm_rmt:size_w2_h2"] }
+      },
+      "thm_rmt:w2_h3": {
+        "add": { "component_groups": ["thm_rmt:size_w2_h3"] }
+      },
+      "thm_rmt:w2_h4": {
+        "add": { "component_groups": ["thm_rmt:size_w2_h4"] }
+      },
+      "thm_rmt:w2_h5": {
+        "add": { "component_groups": ["thm_rmt:size_w2_h5"] }
+      },
+      "thm_rmt:w3_h1": {
+        "add": { "component_groups": ["thm_rmt:size_w3_h1"] }
+      },
+      "thm_rmt:w3_h2": {
+        "add": { "component_groups": ["thm_rmt:size_w3_h2"] }
+      },
+      "thm_rmt:w3_h3": {
+        "add": { "component_groups": ["thm_rmt:size_w3_h3"] }
+      },
+      "thm_rmt:w3_h4": {
+        "add": { "component_groups": ["thm_rmt:size_w3_h4"] }
+      },
+      "thm_rmt:w3_h5": {
+        "add": { "component_groups": ["thm_rmt:size_w3_h5"] }
+      },
+      "thm_rmt:w4_h1": {
+        "add": { "component_groups": ["thm_rmt:size_w4_h1"] }
+      },
+      "thm_rmt:w4_h2": {
+        "add": { "component_groups": ["thm_rmt:size_w4_h2"] }
+      },
+      "thm_rmt:w4_h3": {
+        "add": { "component_groups": ["thm_rmt:size_w4_h3"] }
+      },
+      "thm_rmt:w4_h4": {
+        "add": { "component_groups": ["thm_rmt:size_w4_h4"] }
+      },
+      "thm_rmt:w4_h5": {
+        "add": { "component_groups": ["thm_rmt:size_w4_h5"] }
+      },
+      "thm_rmt:w5_h1": {
+        "add": { "component_groups": ["thm_rmt:size_w5_h1"] }
+      },
+      "thm_rmt:w5_h2": {
+        "add": { "component_groups": ["thm_rmt:size_w5_h2"] }
+      },
+      "thm_rmt:w5_h3": {
+        "add": { "component_groups": ["thm_rmt:size_w5_h3"] }
+      },
+      "thm_rmt:w5_h4": {
+        "add": { "component_groups": ["thm_rmt:size_w5_h4"] }
+      },
+      "thm_rmt:w5_h5": { "add": { "component_groups": ["thm_rmt:size_w5_h5"] } }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "thm_rmt:storage",
+      "materials": { "default": "entity_alphatest" },
+      "geometry": { "default": "geometry.thm_rmt_dummy" },
+      "render_controllers": ["controller.render.default"],
+      "textures": { "default": "textures/thm/rmt/dummy" }
+    }
+  }
+}

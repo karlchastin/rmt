@@ -1,0 +1,10 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "unlock": { "context": "AlwaysUnlocked" },
+    "description": { "identifier": "thm_rmt:claim_flag" },
+    "tags": ["crafting_table"],
+    "ingredients": ["minecraft:paper", "minecraft:stick", "minecraft:redstone"],
+    "result": { "item": "thm_rmt:claim_flag" }
+  }
+}

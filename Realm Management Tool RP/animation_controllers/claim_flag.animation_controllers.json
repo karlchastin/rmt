@@ -1,0 +1,1 @@
+{"format_version":"1.10.0","animation_controllers":{"controller.animation.thm_rmt_claim_flag.particle":{"states":{"default":{"transitions":[{"claim_particle":"q.is_alive"}]},"claim_particle":{"particle_effects":[{"effect":"claim_particle","locator":"root"}],"transitions":[{"default":"!query.is_alive"}]}}}}}

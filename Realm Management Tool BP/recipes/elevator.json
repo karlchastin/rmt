@@ -1,0 +1,14 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "unlock": { "context": "AlwaysUnlocked" },
+    "description": { "identifier": "thm_rmt:elevator" },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      "minecraft:cobblestone",
+      "minecraft:string",
+      "minecraft:redstone"
+    ],
+    "result": { "item": "thm_rmt:elevator" }
+  }
+}

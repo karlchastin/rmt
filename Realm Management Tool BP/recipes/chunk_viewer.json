@@ -1,0 +1,10 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "unlock": { "context": "AlwaysUnlocked" },
+    "description": { "identifier": "thm_rmt:chunk_viewer" },
+    "tags": ["crafting_table"],
+    "ingredients": ["minecraft:cobblestone", "minecraft:redstone"],
+    "result": { "item": "thm_rmt:chunk_viewer" }
+  }
+}

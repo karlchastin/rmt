@@ -1,0 +1,65 @@
+{
+   "num_mip_levels" : 4,
+   "padding" : 8,
+   "resource_pack_name" : "vanilla",
+   "texture_data" : {		
+        "thm_rmt_jumppad_black": {
+			"textures": "textures/thm/rmt/jumppad/black.png"
+		},
+		"thm_rmt_jumppad_blue": {
+			"textures": "textures/thm/rmt/jumppad/blue.png"
+		},
+		"thm_rmt_jumppad_brown": {
+			"textures": "textures/thm/rmt/jumppad/brown.png"
+		},
+		"thm_rmt_jumppad_cyan": {
+			"textures": "textures/thm/rmt/jumppad/cyan.png"
+		},
+		"thm_rmt_jumppad_green": {
+			"textures": "textures/thm/rmt/jumppad/green.png"
+		},
+		"thm_rmt_jumppad_grey": {
+			"textures": "textures/thm/rmt/jumppad/grey.png"
+		},
+		"thm_rmt_jumppad_light_blue": {
+			"textures": "textures/thm/rmt/jumppad/light_blue.png"
+		},
+		"thm_rmt_jumppad_light_grey": {
+			"textures": "textures/thm/rmt/jumppad/light_grey.png"
+		},
+		"thm_rmt_jumppad_lime": {
+			"textures": "textures/thm/rmt/jumppad/lime.png"
+		},
+		"thm_rmt_jumppad_magenta": {
+			"textures": "textures/thm/rmt/jumppad/magenta.png"
+		},
+		"thm_rmt_jumppad_orange": {
+			"textures": "textures/thm/rmt/jumppad/orange.png"
+		},
+		"thm_rmt_jumppad_pink": {
+			"textures": "textures/thm/rmt/jumppad/pink.png"
+		},
+		"thm_rmt_jumppad_purple": {
+			"textures": "textures/thm/rmt/jumppad/purple.png"
+		},
+		"thm_rmt_jumppad_red": {
+			"textures": "textures/thm/rmt/jumppad/red.png"
+		},
+		"thm_rmt_jumppad_white": {
+			"textures": "textures/thm/rmt/jumppad/white.png"
+		},
+		"thm_rmt_jumppad_yellow": {
+			"textures": "textures/thm/rmt/jumppad/yellow.png"
+		},
+		"thm_rmt_elevator": {
+			"textures": "textures/thm/rmt/elevator.png"
+		},
+		"thm_rmt_attack": {
+			"textures": "textures/thm/rmt/attack.png"
+		},
+		"thm_rmt_interact": {
+			"textures": "textures/thm/rmt/interact.png"
+		}
+   },
+   "texture_name" : "atlas.terrain"
+}
