@@ -9966,7 +9966,6 @@ function Ds(t, e) {
         if (!(a instanceof n)) return;
         const o = a;
         if (o && i[e(226)](e(228))) {
-            if (!or[e(235)](o, i.location, st[e(239)])) return void $t[e(224)](o, { translate: e(242) + st[e(222)] });
             const t = o.getComponent(r[e(243)]),
                 n = t?.[e(232)](s[e(233)]);
             if (o[e(237)]() === h[e(221)]) return;
@@ -18934,8 +18933,10 @@ async function im(e) {
     r.body(s);
     const i = [],
         o = e[n(445)](W.TP_WAIT_ID);
+    
     o && (r[n(394)]({ translate: n(390) }, Mn[n(412)]), i.push(n(414)));
-        r[n(394)]({ translate: n(430) }, Mn.MENU_PROFILE),
+    
+    r[n(394)]({ translate: n(430) }, Mn.MENU_PROFILE),
         i[n(403)](n(432)),
         !Jt[n(395)](Kt[n(436)]) && (r.button({ translate: n(413) }, Mn[n(429)]), i[n(403)](n(385)));
     ![Jt[n(395)](Kt[n(400)]), Jt[n(395)](Kt.disableRTP), Jt.getSetting(Kt[n(443)]), Jt[n(395)](Kt[n(443)])][n(433)](
