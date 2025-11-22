@@ -700,54 +700,7 @@ function V(t, e) {
             e.push(e.shift());
         }
 })();
-class Y {
-    static [U(101)](t, e, n) {
-        return t + ":" + this[U(111)](n) + ":" + e;
-    }
-    static getSubClaimSaveDataKey(t, e, n, r) {
-        return t + ":" + this[U(111)](n) + ":" + r + ":" + e;
-    }
-    static [U(111)](t) {
-        const e = U;
-        let n = "0";
-        return t === T[e(119)] && (n = "0"), t === T[e(117)] && (n = "1"), t === T[e(115)] && (n = "2"), n;
-    }
-    static extractSubclaimName(t) {
-        const e = U,
-            n = t[e(114)](":");
-        return t[e(116)](n + 1);
-    }
-    static [U(112)](t) {
-        const e = U,
-            n = t[e(114)](":");
-        return t[e(116)](n + 1);
-    }
-    static extractDimension(t) {
-        const e = U,
-            n = t[e(114)](":"),
-            r = t[e(116)](0, n),
-            a = r.lastIndexOf(":"),
-            s = r.substring(a + 1);
-        let i = T[e(119)];
-        switch (s) {
-            case "1":
-                i = T[e(117)];
-                break;
-            case "2":
-                i = T[e(115)];
-        }
-        return i;
-    }
-    static [U(103)](t) {
-        return t.x + ":" + t.y;
-    }
-    static [U(110)](t, e) {
-        const n = U,
-            r = Math[n(106)](t.x / 64),
-            a = Math.floor(t.y / 64);
-        return W.MEGA_CHUNK + ":" + Y[n(111)](e) + ":" + r + ":" + a;
-    }
-}
+
 const q = z;
 function j() {
     const t = [
@@ -823,100 +776,7 @@ function z(t, e) {
             e.push(e.shift());
         }
 })();
-class X {
-    static [q(467)] = new Map();
-    static [q(470)] = new Map();
-    static [q(479)] = new Map();
-    static [q(456)](t, e, n) {
-        const r = q;
-        let a = this[r(482)](t, n);
-        !a && (a = { owners: new Set(), lastCalled: Date.now() }),
-            a[r(485)][r(474)](e),
-            this[r(457)](t, n, a),
-            this[r(459)](t, n, a);
-    }
-    static removeFromMegaChunkData(t, e, n) {
-        const r = q,
-            a = this[r(482)](t, n);
-        a &&
-            (a.owners.delete(e),
-            0 !== a[r(485)][r(475)] ? this.saveMegaChunkData(t, n, a) : this[r(476)](Y[r(465)](t, n), n));
-    }
-    static [q(450)](t, e, n, r) {
-        const a = q;
-        if (this.getMegaChunk(t, n) && r) {
-            for (const e of r) {
-                if (Y.getMegaChunkKey(e, n) === Y.getMegaChunkKey(t, n)) return;
-            }
-            this[a(448)](t, e, n);
-        }
-    }
-    static [q(482)](t, e) {
-        const n = q,
-            r = this[n(460)](t, e);
-        if (r) return r;
-        const a = this[n(480)](t, e);
-        return void 0 !== a ? (this.addMegachunkToCache(t, e, a), a) : void 0;
-    }
-    static [q(468)](t, e) {
-        let n = this[q(472)](e);
-        this.clearOwnerFromCache(n, t);
-    }
-    static clearOwnerFromCache(t, e) {
-        const n = q;
-        t[n(484)]((t) => {
-            const r = n;
-            t.owners[r(454)](e);
-        });
-    }
-    static [q(476)](t, n) {
-        this[q(455)](t, n), e.setDynamicProperty(t, void 0);
-    }
-    static saveMegaChunkData(t, n, r) {
-        const a = q,
-            s = Y[a(465)](t, n);
-        0 === r[a(485)][a(475)] && this[a(476)](s, n);
-        const i = L[a(463)](Array[a(458)](r[a(485)]));
-        if (!i) throw new Error(a(461));
-        e[a(446)](s, i);
-    }
-    static [q(455)](t, e) {
-        this[q(472)](e).delete(t);
-    }
-    static [q(457)](t, e, n) {
-        const r = q;
-        let a = this.getCache(e);
-        const s = Y.getMegaChunkKey(t, e);
-        a[r(478)](s, n);
-    }
-    static [q(460)](t, e) {
-        const n = q;
-        let r = this[n(472)](e);
-        const a = Y[n(465)](t, e);
-        return r.get(a);
-    }
-    static getMegaChunkDataSave(t, n) {
-        const r = q,
-            a = Y[r(465)](t, n),
-            s = e[r(483)](a);
-        if (!s) return;
-        const i = L.stringToObject(s);
-        return { owners: new Set(i), lastCalled: Date[r(477)]() };
-    }
-    static [q(472)](t) {
-        const e = q;
-        switch (t) {
-            case T.overworld:
-                return this[e(467)];
-            case T[e(451)]:
-                return this[e(470)];
-            case T[e(466)]:
-                return this[e(479)];
-            default:
-                throw new Error(e(447));
-        }
-    }
-}
+
 var J, Z, Q, $, tt, et, nt, rt, at, st, it, ot, ct, mt, lt, ut, ht, ft, dt, pt, _t, It, gt, wt, bt, yt, kt;
 function vt(t, e) {
     var n = xt();
@@ -3707,543 +3567,7 @@ function qe(t, e) {
         return n[(t -= 173)];
     })(t, e);
 }
-class je {
-    static [Ue(201)](t, e) {
-        const n = Ue,
-            r = this[n(203)](t, e);
-        if (!r) return;
-        const a = this[n(188)](t, e),
-            s = this[n(198)](t, e),
-            i = this[n(246)](t, e),
-            o = this[n(254)](t, e),
-            c = this[n(291)](t, e),
-            m = this[n(176)](t, e),
-            l = this[n(183)](t, e);
-        return {
-            claims: r,
-            subClaimGroupNames: a,
-            subClaimGroups: s,
-            ownerName: Ke[n(202)](t),
-            claimName: i,
-            trusted: o,
-            trustedRanks: c,
-            permissions: m,
-            flags: l,
-        };
-    }
-    static [Ue(313)](t, n) {
-        const r = Ue,
-            a = [W[r(206)], W[r(187)], W[r(244)], W[r(319)], W.CLAIM_FLAGS];
-        W.SUBCLAIM_GROUP_NAMES, W[r(186)], W[r(324)], W.SUBCLAIM_PERMISSIONS, W[r(239)];
-        const s = this.getClaims(t, n);
-        if (void 0 !== s) for (const e of s) X[r(229)](e, t, n);
-        this[r(286)](t, n);
-        for (const s of a) e[r(320)](Y[r(189)](s, t, n), void 0);
-        X[r(273)](t, n);
-    }
-    static getClaimFlagsBody(t) {
-        const e = Ue;
-        return [
-            { translate: "thm_rmt.form.claim.flags.entitySpawn", with: ["" + (t[e(231)] ? "§ctrue§r" : e(322))] },
-            { text: "\n" },
-            { translate: e(228), with: ["" + (t[e(287)] ? "§ctrue§r" : e(322))] },
-            { text: "\n" },
-            { translate: "thm_rmt.form.claim.flags.entityDamage", with: ["" + (t[e(194)] ? e(210) : e(322))] },
-            { text: "\n" },
-            { translate: e(284), with: ["" + (t.playerDamage ? "§ctrue§r" : e(322))] },
-        ];
-    }
-    static getClaimsBody(t) {
-        const e = Ue,
-            n = [];
-        for (const r of t) n[e(270)]({ text: e(222) + r.x + e(267) + r.y + "\n" });
-        return n;
-    }
-    static [Ue(214)](t) {
-        const e = Ue,
-            n = [];
-        for (const e of t) n.push({ text: e + "\n" });
-        return 0 === n[e(289)] && n[e(270)]({ text: e(263) }), n;
-    }
-    static getTrustedBody(t) {
-        const e = Ue,
-            n = [];
-        for (const r of t) {
-            const t = Ke.getCurrentName(r);
-            n[e(270)]({ text: (t || e(257)) + "\n" });
-        }
-        return 0 === n.length && n[e(270)]({ text: e(263) }), n;
-    }
-    static getTrustedRanksBody(t) {
-        const e = Ue,
-            n = [];
-        for (const r of t) n[e(270)]({ text: r + "\n" });
-        return 0 === n[e(289)] && n[e(270)]({ text: e(263) }), n;
-    }
-    static [Ue(296)](t) {
-        const e = Ue;
-        return [
-            {
-                translate: e(193),
-                with: ["" + (t[e(323)] === J[e(318)] ? "§cAll§r" : t.canBuild === J.TRUSTED ? e(298) : e(247))],
-            },
-            { text: "\n" },
-            {
-                translate: e(321),
-                with: ["" + (t[e(178)] === J.ALL ? e(304) : t[e(178)] === J[e(223)] ? "§6Trusted§r" : e(247))],
-            },
-            { text: "\n" },
-            {
-                translate: e(274),
-                with: ["" + (t[e(317)] === J[e(318)] ? e(304) : t[e(317)] === J[e(223)] ? e(298) : "§aNone§r")],
-            },
-            { text: "\n" },
-            {
-                translate: e(303),
-                with: ["" + (t[e(305)] === J[e(318)] ? e(304) : t[e(305)] === J[e(223)] ? "§6Trusted§r" : e(247))],
-            },
-            { text: "\n" },
-            {
-                translate: "thm_rmt.form.claim.permissions.tableAccess",
-                with: ["" + (t[e(216)] === J[e(318)] ? e(304) : t[e(216)] === J[e(223)] ? e(298) : e(247))],
-            },
-            { text: "\n" },
-            {
-                translate: e(174),
-                with: ["" + (t[e(184)] === J[e(318)] ? e(304) : t[e(184)] === J[e(223)] ? e(298) : e(247))],
-            },
-            { text: "\n" },
-            {
-                translate: e(196),
-                with: [
-                    "" + (t.respawnBlockAccess === J[e(318)] ? "§cAll§r" : t[e(209)] === J[e(223)] ? e(298) : e(247)),
-                ],
-            },
-            { text: "\n" },
-            {
-                translate: e(179),
-                with: ["" + (t[e(192)] === J[e(318)] ? e(304) : t[e(192)] === J.TRUSTED ? e(298) : e(247))],
-            },
-            { text: "\n" },
-            {
-                translate: e(253),
-                with: ["" + (t[e(281)] === J[e(318)] ? e(304) : t[e(281)] === J[e(223)] ? e(298) : e(247))],
-            },
-            { text: "\n" },
-            {
-                translate: e(262),
-                with: ["" + (t.entityAccess === J[e(318)] ? e(304) : t[e(258)] === J[e(223)] ? e(298) : e(247))],
-            },
-            { text: "\n" },
-            {
-                translate: e(314),
-                with: ["" + (t[e(309)] === J[e(318)] ? e(304) : t[e(309)] === J.TRUSTED ? e(298) : e(247))],
-            },
-            { text: "\n" },
-            {
-                translate: "thm_rmt.form.claim.permissions.setHome",
-                with: ["" + (t[e(177)] === J[e(318)] ? e(304) : t[e(177)] === J.TRUSTED ? e(298) : "§aNone§r")],
-            },
-            { text: "\n" },
-            {
-                translate: e(285),
-                with: ["" + (t.setPlayerWarp === J[e(318)] ? e(304) : t[e(292)] === J.TRUSTED ? e(298) : "§aNone§r")],
-            },
-        ];
-    }
-    static [Ue(283)](t) {
-        const e = Ue,
-            n = this[e(246)](t, T[e(191)]),
-            r = this[e(246)](t, T.nether),
-            a = this[e(246)](t, T[e(224)]);
-        return !!(n && n.length > 0) || !!(r && r.length > 0) || !!(a && a[e(289)] > 0);
-    }
-    static [Ue(295)](t, e, n, r) {
-        const a = Ue;
-        !(void 0 !== this[a(246)](t, n)) && this[a(279)](t, n, r || a(181)), this[a(232)](t, n, e), X[a(306)](e, t, n);
-    }
-    static getClaims(t, n) {
-        const r = Ue,
-            a = Y[r(189)](W.CLAIM_CLAIMS, t, n),
-            s = e[r(230)](a);
-        if (s) return L[r(243)](s);
-    }
-    static [Ue(246)](t, n) {
-        const r = Ue,
-            a = Y.getClaimSaveDataKey(W[r(187)], t, n);
-        return e[r(230)](a);
-    }
-    static [Ue(254)](t, n) {
-        const r = Ue,
-            a = Y[r(189)](W[r(244)], t, n),
-            s = e.getDynamicProperty(a);
-        return s ? L[r(243)](s) : [];
-    }
-    static getClaimTrustedRanksList(t, n) {
-        const r = Ue,
-            a = Y.getClaimSaveDataKey(W[r(301)], t, n),
-            s = e.getDynamicProperty(a);
-        return s ? L[r(243)](s) : [];
-    }
-    static [Ue(176)](t, n) {
-        const r = Ue,
-            a = Y.getClaimSaveDataKey(W[r(319)], t, n),
-            s = e.getDynamicProperty(a);
-        return s
-            ? L[r(243)](s)
-            : {
-                  canBuild: J[r(175)],
-                  canBreak: J[r(175)],
-                  useItem: J[r(175)],
-                  storageAccess: J[r(175)],
-                  tableAccess: J.NONE,
-                  interactiveAccess: J[r(175)],
-                  respawnBlockAccess: J[r(175)],
-                  utilityAccess: J[r(175)],
-                  decorationAccess: J[r(175)],
-                  entityAccess: J[r(175)],
-                  miscAccess: J[r(175)],
-                  setHome: J[r(175)],
-                  setPlayerWarp: J[r(175)],
-              };
-    }
-    static [Ue(183)](t, n) {
-        const r = Ue,
-            a = Y[r(189)](W[r(199)], t, n),
-            s = e[r(230)](a);
-        return s ? L.stringToObject(s) : Ve;
-    }
-    static [Ue(195)](t, n, r) {
-        const a = Ue,
-            s = Y[a(189)](W.CLAIM_CLAIMS, t, n),
-            i = L.objectToString(r);
-        return null !== i && (e[a(320)](s, i), !0);
-    }
-    static [Ue(279)](t, n, r) {
-        const a = Ue,
-            s = Y.getClaimSaveDataKey(W[a(187)], t, n);
-        e.setDynamicProperty(s, r);
-    }
-    static setClaimTrustedList(t, n, r) {
-        const a = Ue,
-            s = Y[a(189)](W[a(244)], t, n),
-            i = L[a(205)](r);
-        return null !== i && (e.setDynamicProperty(s, i), !0);
-    }
-    static setClaimTrustedRanksList(t, n, r) {
-        const a = Ue,
-            s = Y.getClaimSaveDataKey(W[a(301)], t, n),
-            i = L.objectToString(r);
-        return null !== i && (e[a(320)](s, i), !0);
-    }
-    static [Ue(220)](t, n, r) {
-        const a = Ue;
-        if (L[a(217)](r, Ge)) return this[a(245)](t, n), !0;
-        const s = Y.getClaimSaveDataKey(W.CLAIM_PERMISSIONS, t, n),
-            i = L.objectToString(r);
-        return null !== i && (e[a(320)](s, i), !0);
-    }
-    static [Ue(245)](t, n) {
-        const r = Ue;
-        e[r(320)](Y.getClaimSaveDataKey(W[r(319)], t, n), void 0);
-    }
-    static [Ue(316)](t, n, r) {
-        const a = Ue;
-        if (L[a(217)](r, Ve)) return this[a(252)](t, n), !0;
-        const s = Y.getClaimSaveDataKey(W[a(199)], t, n),
-            i = L[a(205)](r);
-        return null !== i && (e.setDynamicProperty(s, i), !0);
-    }
-    static [Ue(252)](t, n) {
-        const r = Ue;
-        e[r(320)](Y[r(189)](W.CLAIM_FLAGS, t, n), void 0);
-    }
-    static addClaim(t, e, n) {
-        const r = Ue;
-        let a = this[r(203)](t, e);
-        return null == a && (a = []), a[r(270)](n), this.setClaims(t, e, a), a;
-    }
-    static [Ue(204)](t, e, n) {
-        const r = Ue,
-            a = this[r(203)](t, e);
-        if (!a) return !1;
-        const s = a.findIndex((t) => t.x === n.x && t.y === n.y);
-        return -1 !== s && (a[r(233)](s, 1), X[r(227)](n, t, e, this[r(203)](t, e)), this[r(195)](t, e, a));
-    }
-    static [Ue(280)](t, e, n) {
-        const r = Ue,
-            a = this[r(254)](t, e);
-        return !!a && (a[r(270)](n), this[r(269)](t, e, a));
-    }
-    static removeTrusted(t, e, n) {
-        const r = Ue,
-            a = this[r(254)](t, e);
-        if (!a) return !1;
-        const s = a[r(248)]((t) => t === n);
-        return -1 !== s && (a[r(233)](s, 1), 0 === a[r(289)] ? (this[r(312)](t, e), !0) : this[r(269)](t, e, a));
-    }
-    static [Ue(264)](t, e, n) {
-        const r = Ue,
-            a = this[r(291)](t, e);
-        return !!a && (a[r(270)](n), this[r(260)](t, e, a));
-    }
-    static [Ue(277)](t, e, n) {
-        const r = Ue,
-            a = this[r(291)](t, e);
-        if (!a) return !1;
-        const s = a[r(248)]((t) => t === n);
-        return (
-            -1 !== s &&
-            (a[r(233)](s, 1), 0 === a[r(289)] ? (this[r(200)](t, e), !0) : this.setClaimTrustedRanksList(t, e, a))
-        );
-    }
-    static [Ue(312)](t, n) {
-        const r = Ue;
-        e[r(320)](Y[r(189)](W[r(244)], t, n), void 0);
-    }
-    static [Ue(200)](t, n) {
-        const r = Ue;
-        e.setDynamicProperty(Y[r(189)](W[r(301)], t, n), void 0);
-    }
-    static [Ue(300)](t, e, n, r) {
-        const a = Ue,
-            s = this[a(183)](t, e);
-        return !!s && ((s[n] = r), this[a(316)](t, e, s));
-    }
-    static [Ue(297)](t, e, n) {
-        const r = Ue,
-            a = this.getClaims(t, e);
-        if (!a) return !1;
-        const s = a.findIndex((t) => t.x === n.x && t.y === n.y);
-        return 0 === s
-            ? (this[r(313)](t, e), !0)
-            : -1 !== s &&
-                  (a[r(233)](s, 1), X.safeRemoveFromMegaChunkData(n, t, e, this[r(203)](t, e)), this[r(195)](t, e, a));
-    }
-    static [Ue(207)](t, e, n) {
-        const r = Ue,
-            a = this[r(198)](t, e);
-        return !!a && a.some((t) => t[r(251)][r(261)]((t) => t.x === n.x && t.y === n.y));
-    }
-    static [Ue(198)](t, e) {
-        const n = Ue,
-            r = this[n(188)](t, e);
-        return r ? r[n(310)]((n) => this.getSubClaimData(t, e, n)) : [];
-    }
-    static getSubClaimData(t, e, n) {
-        const r = Ue;
-        return {
-            claims: this[r(250)](t, e, n),
-            claimName: n,
-            trusted: this.getSubClaimTrustedList(t, e, n),
-            trustedRanks: this.getSubClaimTrustedRanksList(t, e, n),
-            permissions: this[r(255)](t, e, n),
-            flags: this[r(208)](t, e, n),
-        };
-    }
-    static [Ue(286)](t, e) {
-        const n = Ue,
-            r = this.getSubClaimGroupNames(t, e);
-        if (r) for (const a of r) this[n(215)](t, e, a);
-    }
-    static [Ue(215)](t, n, r) {
-        const a = Ue,
-            s = [W[a(186)], W[a(324)], W[a(308)], W[a(239)]];
-        for (const i of s) e[a(320)](Y.getSubClaimSaveDataKey(i, t, n, r), void 0);
-        this[a(290)](t, n, r);
-    }
-    static [Ue(250)](t, n, r) {
-        const a = Ue,
-            s = Y.getSubClaimSaveDataKey(W.SUBCLAIM_CLAIMS, t, n, r),
-            i = e[a(230)](s);
-        return i ? L[a(243)](i) : [];
-    }
-    static [Ue(315)](t, n, r, a) {
-        const s = Ue,
-            i = Y.getSubClaimSaveDataKey(W[s(186)], t, n, r),
-            o = L[s(205)](a);
-        return null !== o && (e.setDynamicProperty(i, o), !0);
-    }
-    static [Ue(271)](t, e, n, r) {
-        const a = Ue,
-            s = this[a(242)](t, e, n);
-        return !!s && (s[a(270)](r), this.setSubClaimClaims(t, e, n, s));
-    }
-    static [Ue(213)](t, e, n, r) {
-        const a = Ue,
-            s = this[a(242)](t, e, n);
-        if (!s) return !1;
-        const i = s[a(248)]((t) => t.x === r.x && t.y === r.y);
-        return -1 !== i && (s.splice(i, 1), this.setSubClaimClaims(t, e, n, s));
-    }
-    static setSubClaimTrustedList(t, n, r, a) {
-        const s = Ue;
-        if (0 === a[s(289)]) return this.deleteSUbClaimTrustedList(t, n, r), !0;
-        const i = Y[s(190)](W.SUBCLAIM_TRUSTED_LIST, t, n, r),
-            o = L[s(205)](a);
-        return null !== o && (e[s(320)](i, o), !0);
-    }
-    static [Ue(226)](t, n, r, a) {
-        const s = Ue;
-        if (0 === a[s(289)]) return this[s(225)](t, n, r), !0;
-        const i = Y[s(190)](W[s(282)], t, n, r),
-            o = L[s(205)](a);
-        return null !== o && (e.setDynamicProperty(i, o), !0);
-    }
-    static getSubClaimTrustedList(t, n, r) {
-        const a = Y[Ue(190)](W.SUBCLAIM_TRUSTED_LIST, t, n, r),
-            s = e.getDynamicProperty(a);
-        return s ? L.stringToObject(s) : [];
-    }
-    static getSubClaimTrustedRanksList(t, n, r) {
-        const a = Ue,
-            s = Y[a(190)](W[a(282)], t, n, r),
-            i = e.getDynamicProperty(s);
-        return i ? L.stringToObject(i) : [];
-    }
-    static [Ue(265)](t, e, n, r) {
-        const a = Ue,
-            s = this.getSubClaimTrustedList(t, e, n);
-        return (
-            !!s &&
-            (s[a(270)](r), 0 === s[a(289)] ? (this.deleteSUbClaimTrustedList(t, e, n), !0) : this[a(180)](t, e, n, s))
-        );
-    }
-    static [Ue(278)](t, e, n, r) {
-        const a = Ue,
-            s = this[a(173)](t, e, n);
-        if (!s) return !1;
-        const i = s[a(248)]((t) => t === r);
-        return -1 !== i && (s[a(233)](i, 1), 0 === s[a(289)] ? (this[a(276)](t, e, n), !0) : this[a(180)](t, e, n, s));
-    }
-    static [Ue(325)](t, e, n, r) {
-        const a = Ue,
-            s = this[a(266)](t, e, n);
-        return !!s && (s.push(r), 0 === s.length ? (this[a(225)](t, e, n), !0) : this[a(226)](t, e, n, s));
-    }
-    static removeSubClaimTrustedRank(t, e, n, r) {
-        const a = Ue,
-            s = this[a(266)](t, e, n);
-        if (!s) return !1;
-        const i = s.findIndex((t) => t === r);
-        return (
-            -1 !== i &&
-            (s[a(233)](i, 1),
-            0 === s[a(289)] ? (this[a(225)](t, e, n), !0) : this.setSubClaimTrustedRanksList(t, e, n, s))
-        );
-    }
-    static [Ue(276)](t, n, r) {
-        const a = Ue;
-        e[a(320)](Y.getSubClaimSaveDataKey(W[a(324)], t, n, r), void 0);
-    }
-    static [Ue(225)](t, n, r) {
-        const a = Ue;
-        e[a(320)](Y.getSubClaimSaveDataKey(W[a(282)], t, n, r), void 0);
-    }
-    static [Ue(182)](t, n, r, a) {
-        const s = Ue;
-        if (L[s(217)](a, Ge)) return this[s(294)](t, n, r), !0;
-        const i = Y[s(190)](W[s(308)], t, n, r),
-            o = L.objectToString(a);
-        return null !== o && (e[s(320)](i, o), !0);
-    }
-    static [Ue(294)](t, n, r) {
-        const a = Ue;
-        e.setDynamicProperty(Y[a(190)](W[a(308)], t, n, r), void 0);
-    }
-    static getSubClaimPermissions(t, n, r) {
-        const a = Ue,
-            s = Y[a(190)](W[a(308)], t, n, r),
-            i = e[a(230)](s);
-        return i ? L.stringToObject(i) : Ge;
-    }
-    static [Ue(299)](t, n, r, a) {
-        const s = Ue;
-        if (L[s(217)](a, Ve)) return this[s(235)](t, n, r), !0;
-        const i = Y.getSubClaimSaveDataKey(W[s(239)], t, n, r),
-            o = L[s(205)](a);
-        return null !== o && (e[s(320)](i, o), !0);
-    }
-    static [Ue(235)](t, n, r) {
-        const a = Ue;
-        e[a(320)](Y[a(190)](W[a(239)], t, n, r), void 0);
-    }
-    static [Ue(208)](t, n, r) {
-        const a = Ue,
-            s = Y.getSubClaimSaveDataKey(W[a(239)], t, n, r),
-            i = e[a(230)](s);
-        return i ? L[a(243)](i) : Ve;
-    }
-    static [Ue(188)](t, n) {
-        const r = Ue,
-            a = Y[r(189)](W[r(288)], t, n),
-            s = e.getDynamicProperty(a);
-        return s ? L[r(243)](s) : [];
-    }
-    static addSubClaimGroupName(t, e, n) {
-        const r = Ue,
-            a = this[r(188)](t, e);
-        return !!a && (a.push(n), 0 === a[r(289)] ? (this[r(293)](t, e), !0) : this.setSubClaimGroupNames(t, e, a));
-    }
-    static [Ue(293)](t, n) {
-        const r = Ue,
-            a = Y[r(189)](W.SUBCLAIM_GROUP_NAMES, t, n);
-        return e[r(320)](a, void 0), !0;
-    }
-    static deleteSubClaimGroupName(t, e, n) {
-        const r = Ue,
-            a = this[r(188)](t, e);
-        if (!a) return !1;
-        const s = a.findIndex((t) => t === n);
-        return -1 !== s && (a.splice(s, 1), 0 === a.length ? (this[r(293)](t, e), !0) : this[r(241)](t, e, a));
-    }
-    static [Ue(241)](t, n, r) {
-        const a = Ue;
-        if (0 === r[a(289)]) return this[a(293)](t, n), !0;
-        const s = Y[a(189)](W[a(288)], t, n),
-            i = L[a(205)](r);
-        return null !== i && (e[a(320)](s, i), !0);
-    }
-    static [Ue(242)](t, n, r) {
-        const a = Ue,
-            s = Y[a(190)](W[a(186)], t, n, r),
-            i = e[a(230)](s);
-        return i ? L[a(243)](i) : [];
-    }
-    static getSubClaimFromClaimLocation(t, e, n) {
-        const r = Ue,
-            a = this[r(198)](t, e);
-        if (a) return a[r(234)]((t) => t[r(251)].some((t) => t.x === n.x && t.y === n.y));
-    }
-    static [Ue(302)](t, e) {
-        const n = Ue,
-            r = this[n(188)](t, e);
-        return r
-            ? r[n(240)]((r, a) => {
-                  const s = n,
-                      i = this[s(242)](t, e, a);
-                  return i ? r[s(249)](i) : r;
-              }, [])
-            : [];
-    }
-    static [Ue(212)](t, e, n) {
-        const r = Ue;
-        return this[r(302)](t, e)[r(261)]((t) => t.x === n.x && t.y === n.y);
-    }
-    static [Ue(236)](t, e, n, r) {
-        const a = Ue,
-            s = this[a(268)](t, e, n);
-        return (
-            !!s &&
-            (this[a(215)](n, t, e),
-            this[a(315)](t, e, r, s.claims),
-            this.setSubClaimTrustedList(t, e, r, s[a(211)]),
-            this[a(182)](t, e, r, s[a(197)]),
-            this[a(299)](t, e, r, s.flags),
-            !0)
-        );
-    }
-}
+
 const ze = Je;
 function Xe() {
     const t = [
@@ -4311,70 +3635,7 @@ function Je(t, e) {
             e.push(e.shift());
         }
 })();
-class Ze {
-    static [ze(456)] = new Map();
-    static [ze(476)]() {
-        const e = ze;
-        t[e(469)](() => {
-            const t = e,
-                n = Ee[t(446)]();
-            for (const [e, r] of this[t(456)][t(459)]()) n - r.lastChecked > 1800 && this[t(456)][t(454)](e);
-        }, 1800 * i);
-    }
-    static cacheOverflowCheck() {
-        const t = ze;
-        this.ChunkCache[t(448)] > 1e3 && this.ChunkCache[t(458)]();
-    }
-    static [ze(475)](t, e) {
-        const n = ze,
-            r = Ee[n(446)]();
-        this.ChunkCache[n(461)](t, { ownerId: e, lastChecked: r }), this.cacheOverflowCheck();
-    }
-    static [ze(468)](t, e) {
-        return void 0 !== this[ze(470)](t, e);
-    }
-    static [ze(463)](t) {
-        const e = ze,
-            n = this[e(456)].get(t);
-        if (void 0 !== n) return this[e(475)](t, n.ownerId), n[e(462)];
-    }
-    static [ze(470)](t, e) {
-        const n = ze;
-        if (this[n(456)][n(447)](t)) {
-            const e = this[n(456)][n(471)](t);
-            return this[n(475)](t, e[n(462)]), e[n(462)];
-        }
-        const r = X[n(451)](t, e);
-        if (void 0 === r) return;
-        const a = [...r[n(466)]];
-        for (const r of a) {
-            const a = je[n(460)](r, e);
-            if (void 0 !== a && a[n(455)]((e) => e.x === t.x && e.y === t.y)) return this[n(475)](t, r), r;
-        }
-    }
-    static isClaimInRadius(t, e, n) {
-        const r = ze;
-        for (let a = t.x - n; a <= t.x + n; a++)
-            for (let s = t.y - n; s <= t.y + n; s++) {
-                if (Math.sqrt((t.x - a) ** 2 + (t.y - s) ** 2) <= n) {
-                    const t = { x: a, y: s };
-                    if (this[r(468)](t, e)) return !0;
-                }
-            }
-        return !1;
-    }
-    static [ze(467)](t, e, n, r) {
-        const a = ze;
-        for (let s = t.x - r; s <= t.x + r; s++)
-            for (let i = t.y - r; i <= t.y + r; i++) {
-                if (Math.sqrt((t.x - s) ** 2 + (t.y - i) ** 2) <= r) {
-                    const t = { x: s, y: i };
-                    return this[a(470)](t, n) === e;
-                }
-            }
-        return !1;
-    }
-}
+
 const Qe = tn;
 function $e() {
     const t = [
@@ -4439,58 +3700,7 @@ function tn(t, e) {
             e.push(e.shift());
         }
 })();
-class en {
-    static getChunkCoords(t) {
-        return { x: Math[tn(291)](t.x / 16), y: Math.floor(t.z / 16) };
-    }
-    static [Qe(295)](t, e = !0, n = !0) {
-        const r = Qe,
-            a = t[r(292)],
-            s = this[r(308)](a),
-            i = ue[r(298)](this[r(311)](s), a);
-        if (e) {
-            let e = "";
-            const n = Ze[r(286)](s, t.dimension.id);
-            void 0 !== n && (e = je[r(294)](n, t[r(304)].id) || "");
-            const a = {
-                rawtext: [
-                    { translate: r(309), with: ["x: " + s.x + r(284) + s.y] },
-                    { text: "\n" },
-                    "" === e
-                        ? { translate: "thm_rmt.message.claim.unclaimed" }
-                        : { translate: "thm_rmt.message.claim", with: [e] },
-                ],
-            };
-            t[r(310)][r(306)](a);
-        }
-        n &&
-            (t[r(304)][r(290)](_e[r(285)], { x: a.x + i.x, y: a.y, z: a.z + i.z }),
-            t.dimension[r(290)](_e[r(288)], { x: a.x + i.x, y: a.y, z: a.z + i.z }),
-            t[r(304)].spawnParticle(_e[r(297)], { x: a.x + i.x, y: a.y, z: a.z + i.z }),
-            t[r(304)][r(290)](_e[r(301)], { x: a.x + i.x, y: a.y, z: a.z + i.z }));
-    }
-    static [Qe(311)](t) {
-        return { x: 16 * t.x, y: 0, z: 16 * t.y };
-    }
-    static [Qe(307)](t, e) {
-        return (
-            (t.x === e.x && (t.y === e.y - 1 || t.y === e.y + 1)) ||
-            (t.y === e.y && (t.x === e.x - 1 || t.x === e.x + 1))
-        );
-    }
-    static getNeighboringChunks(t) {
-        return {
-            north: { x: t.x, y: t.y - 1 },
-            south: { x: t.x, y: t.y + 1 },
-            east: { x: t.x + 1, y: t.y },
-            west: { x: t.x - 1, y: t.y },
-            northeast: { x: t.x + 1, y: t.y - 1 },
-            northwest: { x: t.x - 1, y: t.y - 1 },
-            southeast: { x: t.x + 1, y: t.y + 1 },
-            southwest: { x: t.x - 1, y: t.y + 1 },
-        };
-    }
-}
+
 function nn() {
     const t = [
         "CLAIM_CHUNKS",
@@ -4547,41 +3757,7 @@ const an = rn;
             e.push(e.shift());
         }
 })();
-class sn {
-    static [an(474)](t) {
-        const e = an;
-        return t[e(467)](W[e(478)]) ?? 0;
-    }
-    static setClaimChunks(t, e) {
-        const n = an;
-        t[n(475)](W[n(478)], e);
-    }
-    static addClaimChunks(t, e) {
-        const n = an;
-        let r = this[n(474)](t) + e;
-        return r < 0 && (r = 0), this[n(471)](t, r), r;
-    }
-    static removeClaimChunks(t, e) {
-        const n = an;
-        let r = this[n(474)](t) - e;
-        return r < 0 && (r = 0), this[n(471)](t, r), r;
-    }
-    static [an(459)](t, n) {
-        const r = an;
-        let a = this[r(472)](t) + n;
-        return e[r(475)](this[r(476)](t), a), a;
-    }
-    static [an(472)](t) {
-        return e[an(467)](this.getOfflineClaimChunksDP(t)) ?? 0;
-    }
-    static [an(468)](t) {
-        const n = an;
-        e[n(475)](this[n(476)](t), void 0);
-    }
-    static [an(476)](t) {
-        return W.OFFLINE_CLAIM_CHUNKS + ":" + t;
-    }
-}
+
 const on = mn;
 !(function () {
     const t = mn,
@@ -6479,219 +5655,7 @@ function ir(t, e) {
             e.push(e.shift());
         }
 })();
-class or {
-    static async [ar(371)](t, e, n, r) {
-        const a = ar,
-            s = gn[a(414)](e, n),
-            i = t[a(441)];
-        if (r[a(391)] !== Dn[a(376)] && Jt[a(415)](Kt.disableClaims))
-            return void $t.sendErrorMsg(t, { translate: a(436) });
-        let o = t.getDynamicProperty(W[a(437)]);
-        r[a(391)] === Dn[a(376)] && (o = t.getDynamicProperty(W.LAST_PLACED_ADMIN_CLAIM_FLAG));
-        const c = Ee[a(361)]();
-        if (void 0 !== o) {
-            if (!(c - o >= 1)) return;
-        }
-        const l = r[a(391)] === Dn[a(376)] ? W[a(367)] : W[a(437)];
-        t[a(396)](l, c);
-        let u = 0;
-        switch (kn[a(387)](t)) {
-            case m[a(379)]:
-                u = 90;
-                break;
-            case m.South:
-                u = 180;
-                break;
-            case m.West:
-                u = -90;
-        }
-        const h = ue[a(439)](s, { x: 0.5, z: 0.5 }),
-            f = i.spawnEntity(An[a(422)], h);
-        if ((f[a(434)](vn[a(347)], u), r[a(391)] === Dn.ADMIN_CLAIM_FLAG))
-            return f.setProperty(vn[a(451)], 1), void this[a(377)](t, e, f);
-        this.useClaimFlag(t, e, f);
-    }
-    static claimFlagParticle(t, e) {
-        const n = ar,
-            r = ue[n(350)](t),
-            a = ue[n(343)](en[n(418)](en.getChunkCoords(r)), r);
-        e[n(441)].spawnParticle(_e[n(447)], { x: r.x + a.x, y: r.y, z: r.z + a.z }), e[n(397)](we[n(354)]);
-    }
-    static async [ar(377)](t, e, r) {
-        const a = ar,
-            s = t[a(441)],
-            i = en[a(398)](e.location);
-        if (void 0 !== Ze[a(344)](i, s.id)) return $t[a(395)](t, { translate: a(378) }), r[a(432)](), !1;
-        this[a(392)](r[a(401)], t);
-        const o = i.x + ":" + i.y;
-        let c;
-        if (t[a(445)]) {
-            if (((c = await Xn(t)), (c = c instanceof n ? c.id : c), void 0 === c || c === a(406)))
-                return r[a(432)](), !1;
-            const s = en.getChunkCoords(e[a(401)]),
-                i = Ke[a(412)](c);
-            return (
-                $t.sendSuccessMsg(t, { translate: a(409), with: ["" + o, "" + i] }),
-                (r.nameTag = "New Chunk Claimed for " + i),
-                je.setNewClaim(c, s, t[a(441)].id, i + a(453)),
-                !0
-            );
-        }
-        return (
-            je.setNewClaim(a(399), i, t[a(441)].id, a(341)),
-            (r.nameTag = a(429)),
-            $t.sendSuccessMsg(t, { translate: a(386), with: ["" + o] }),
-            !0
-        );
-    }
-    static [ar(411)](t, e, n) {
-        const r = ar,
-            a = sn[r(388)](t),
-            s = t[r(441)];
-        if (!Jt[r(415)](Kt.claimNether) && s.id === T[r(370)])
-            return $t.sendErrorMsg(t, { translate: r(440) }), n[r(432)](), !1;
-        if (!Jt.getSetting(Kt.claimEnd) && s.id === T[r(404)])
-            return $t[r(395)](t, { translate: r(364) }), n[r(432)](), !1;
-        if (s.id === T[r(404)] && L[r(366)](e[r(401)]))
-            return $t.sendErrorMsg(t, { translate: r(419) }), n[r(432)](), !1;
-        if (a <= 0) return $t[r(395)](t, { translate: "thm_rmt.message.claim.error.noChunks" }), n[r(432)](), !1;
-        const i = en[r(398)](e.location);
-        if (void 0 !== Ze[r(344)](i, s.id)) return $t[r(395)](t, { translate: r(378) }), n[r(432)](), !1;
-        const o = en[r(446)](i),
-            c = [];
-        for (const t of Object[r(382)](o)) {
-            const e = Ze[r(344)](o[t], s.id);
-            void 0 !== e && c.push(e);
-        }
-        const m = Object[r(402)](c)[r(427)]((e) => e === t.id),
-            l = Jt[r(415)](Kt[r(410)]);
-        if (Ze[r(357)](i, t[r(441)].id, l) && !m) {
-            return (
-                Ze.isOwnClaimInRadius(i, t.id, t[r(441)].id, l)
-                    ? $t.sendErrorMsg(t, { translate: r(389), with: ["" + l] })
-                    : $t[r(395)](t, { translate: r(368), with: ["" + l] }),
-                n[r(432)](),
-                !1
-            );
-        }
-        return this[r(392)](n[r(401)], t), this[r(373)](t, t[r(381)], t.name + r(453), n, t.id, i), !0;
-    }
-    static [ar(373)](t, e, n, r, a, s) {
-        const i = ar;
-        je[i(349)](a, s, t.dimension.id, n);
-        const o = s.x + ":" + s.y,
-            c = sn[i(430)](t, 1);
-        return (
-            $t.sendSuccessMsg(t, { translate: "thm_rmt.message.claim.success", with: ["" + o, "" + c] }),
-            (r[i(403)] = "New Chunk Claimed by " + e),
-            !0
-        );
-    }
-    static [ar(353)](t, e) {
-        const n = ar,
-            r = [
-                { x: 0, y: 1 },
-                { x: 0, y: -1 },
-                { x: 1, y: 0 },
-                { x: -1, y: 0 },
-            ];
-        for (const a of r) {
-            const r = { x: t.x + a.x, y: t.y + a.y };
-            if (!e[n(427)]((t) => t.x === r.x && t.y === r.y)) return !0;
-        }
-        return !1;
-    }
-    static [ar(359)](t, e) {
-        const n = ar,
-            r = {
-                north: e[n(427)]((e) => e.x === t.x && e.y === t.y + 1),
-                south: e.some((e) => e.x === t.x && e.y === t.y - 1),
-                east: e[n(427)]((e) => e.x === t.x + 1 && e.y === t.y),
-                west: e[n(427)]((e) => e.x === t.x - 1 && e.y === t.y),
-            },
-            a = r[n(425)] && r[n(443)] && !r.east && !r.west,
-            s = r[n(413)] && r[n(433)] && !r[n(425)] && !r[n(443)];
-        return a || s;
-    }
-    static [ar(407)](t, e) {
-        const n = ar,
-            r = cn[e];
-        return !!r && r[n(420)](t[n(391)]);
-    }
-    static [ar(448)](t, e, n) {
-        const r = ar;
-        if (Ne[r(405)](t)) return !0;
-        let a, s;
-        switch (t[r(441)].id) {
-            case T[r(385)]:
-                (a = Jt[r(415)](Kt[r(435)])), (s = Jt[r(415)](Kt[r(400)]));
-                break;
-            case T.nether:
-                (a = Jt[r(415)](Kt[r(383)])), (s = Jt.getSetting(Kt[r(365)]));
-                break;
-            case T.theEnd:
-                (a = Jt[r(415)](Kt.endClaimMinY)), (s = Jt.getSetting(Kt[r(384)]));
-        }
-        if (void 0 !== a && e.y < a) return !0;
-        if (void 0 !== s && e.y > s) return !0;
-        const i = en.getChunkCoords(e),
-            o = Ze[r(344)](i, t[r(441)].id);
-        if ((rr[r(431)](r(450) + t.name + r(352) + n + r(423) + o, er[r(428)]), !o)) return !0;
-        if (o === t.id) return !0;
-        if (je[r(362)](o, t[r(441)].id, i)) {
-            const e = je.getSubClaimFromClaimLocation(o, t[r(441)].id, i);
-            if (!e) return !1;
-            const a = e.permissions;
-            if (a) {
-                switch (a[n]) {
-                    case J[r(340)]:
-                        return !1;
-                    case J[r(393)]:
-                        return !0;
-                    case J[r(346)]:
-                        return this.isTrusted(t, e[r(416)]);
-                    case J[r(426)]:
-                        return this[r(348)](t, e.trustedRanks);
-                    case J[r(351)]:
-                        return this[r(444)](t, e.trusted) || this[r(348)](t, e[r(369)]);
-                }
-            }
-        }
-        const c = je[r(452)](o, t[r(441)].id);
-        if (c) {
-            switch (c[n]) {
-                case J.NONE:
-                    return !1;
-                case J[r(393)]:
-                    return !0;
-                case J[r(346)]:
-                    const e = je.getClaimTrustedList(o, t.dimension.id);
-                    return this[r(444)](t, e);
-                case J[r(426)]:
-                    const n = je[r(358)](o, t[r(441)].id);
-                    return this[r(348)](t, n);
-                case J[r(351)]:
-                    const a = je.getClaimTrustedRanksList(o, t[r(441)].id),
-                        s = je[r(449)](o, t.dimension.id);
-                    return this[r(444)](t, s) || this[r(348)](t, a);
-            }
-        }
-        return !1;
-    }
-    static [ar(444)](t, e) {
-        return !!e && e[ar(427)]((e) => e === t.id);
-    }
-    static isRankTrusted(t, e) {
-        const n = ar;
-        if (!e) return !1;
-        const r = Ke[n(390)](t.id);
-        return !!r && Array[n(438)](e)[n(427)]((t) => Array[n(438)](r)[n(427)]((e) => e === t));
-    }
-    static [ar(380)](t, e, n) {
-        const r = ar;
-        return !!this[r(448)](t, e, n) || ($t.sendErrorMsg(t, { translate: r(375) + n }), !1);
-    }
-}
+
 function cr() {
     var t = [
         "246200vBGRjc",
@@ -7700,18 +6664,21 @@ const na = {
     onUseOn(t) {
         const e = ta,
             n = t.source,
-            r = t[e(455)],
-            a = t[e(470)],
-            s = t[e(450)];
-        if ((t[e(452)], or.checkPermission(n, a[e(464)], st.Interactive))) {
-            if ((r.typeId === Dn[e(466)] && or[e(469)](n, a, s, r), r[e(471)] === Dn[e(458)])) {
-                const t = zr[e(463)](n, a, s);
-                if (!t) return;
-                Jr(n, t);
-            }
-            r.typeId === Dn[e(457)] &&
-                (Ne[e(453)](n) ? or.placeClaimFlag(n, a, s, r) : $t[e(461)](n, { translate: e(467) }));
+            r = t[e(455)], // ItemStack
+            a = t[e(470)], // Block
+            s = t[e(450)]; // BlockFace
+
+        // [LEO]: Logic for Hologram Editor (Kept this, assuming you want Holograms)
+        // The original code checked for Dn[e(458)], which is likely the Hologram Tool
+        if (r[e(471)] === Dn[e(458)]) {
+            const t = zr[e(463)](n, a, s); // Check for hologram at location
+            if (!t) return;
+            Jr(n, t); // Open Hologram Menu
         }
+
+        // [LEO]: REMOVED Claim Flag logic (or.placeClaimFlag)
+        // [LEO]: REMOVED Admin Claim Flag logic
+        // [LEO]: REMOVED or.checkPermission wrapper
     },
 };
 function ra() {
@@ -8376,50 +7343,7 @@ function ya(t, e) {
             e.push(e.shift());
         }
 })();
-class ka {
-    static [ba(376)] = new Map();
-    static init() {
-        this[ba(374)]();
-    }
-    static [ba(374)]() {
-        const t = e[ba(384)]();
-        for (const e of t) this.startRewardTimer(e);
-    }
-    static startRewardTimer(t) {
-        const e = ba;
-        Jt.getSetting(Kt[e(388)]) > 0 && this[e(380)](t);
-    }
-    static stopRewardTimer(t) {
-        this[ba(385)](t);
-    }
-    static [ba(380)](t) {
-        const e = ba;
-        if (We.isAFK(t)) return;
-        const n = 60 * Jt[e(394)](Kt.claimChunkFrequency) * i,
-            r = Nt.startInterval(n, () => {
-                const n = e,
-                    r = Jt.getSetting(Kt[n(388)]),
-                    a = Jt[n(394)](Kt[n(383)]),
-                    s = je.getClaimData(t.id, T[n(395)]),
-                    i = je[n(393)](t.id, T[n(382)]),
-                    o = je[n(393)](t.id, T[n(398)]),
-                    c =
-                        (s ? (s[n(386)][n(378)] ?? 0) : 0) +
-                        (i ? (i[n(386)][n(378)] ?? 0) : 0) +
-                        (o ? (o.claims.length ?? 0) : 0);
-                sn.getClaimChunks(t);
-                const m = c + r,
-                    l = m + r > a ? Math[n(377)](0, a - m) : r;
-                0 !== l && (sn[n(391)](t, l), $t.sendPlainMsg(t, { translate: n(379), with: ["" + l] }));
-            });
-        this[e(376)][e(390)](t.id, r);
-    }
-    static [ba(385)](t) {
-        const e = ba,
-            n = this.claimChunks[e(373)](t);
-        void 0 !== n && (Nt.stopInterval(n), this[e(376)][e(375)](t));
-    }
-}
+
 function va() {
     const t = [
         "set",
@@ -10573,58 +9497,7 @@ function fs(t, e) {
             e.push(e.shift());
         }
 })();
-class ds {
-    static checkEntitySpawn(t) {
-        const e = fs;
-        if (!kn[e(287)](t)) return !0;
-        const n = t[e(291)],
-            r = en[e(289)](n),
-            a = Ze[e(294)](r, t[e(307)].id);
-        if (!a) return !0;
-        if (je.isSubClaim(a, t[e(307)].id, r)) {
-            const n = je.getSubClaimFromClaimLocation(a, t[e(307)].id, r);
-            if (n) return n[e(302)][e(288)];
-        }
-        const s = je[e(293)](a, t[e(307)].id);
-        return !s || s[e(288)];
-    }
-    static [us(298)](t) {
-        const e = us,
-            n = t.location,
-            r = en[e(289)](n),
-            a = Ze[e(294)](r, t.dimension.id);
-        if (!a) return !0;
-        const s = je[e(293)](a, t.dimension.id);
-        if (s) return s[e(308)];
-        if (!je[e(309)](a, t[e(307)].id, r)) return !1;
-        const i = je[e(306)](a, t.dimension.id, r);
-        return !i || i[e(302)][e(308)];
-    }
-    static [us(290)](t) {
-        const e = us,
-            n = t.location,
-            r = en[e(289)](n),
-            a = Ze[e(294)](r, t[e(307)].id);
-        if (!a) return !0;
-        const s = je[e(293)](a, t[e(307)].id);
-        if (s) return s[e(286)];
-        if (!je.isSubClaim(a, t.dimension.id, r)) return !1;
-        const i = je[e(306)](a, t[e(307)].id, r);
-        return !i || i[e(302)][e(286)];
-    }
-    static [us(297)](t) {
-        const e = us,
-            n = t.location,
-            r = en.getChunkCoords(n),
-            a = Ze.getClaimOwnerFromMegaChunk(r, t.dimension.id);
-        if (!a) return !0;
-        const s = je.getClaimFlags(a, t.dimension.id);
-        if (s) return s.explosion;
-        if (!je.isSubClaim(a, t.dimension.id, r)) return !1;
-        const i = je[e(306)](a, t.dimension.id, r);
-        return !i || i[e(302)][e(303)];
-    }
-}
+
 const ps = Is;
 function _s() {
     const t = [
@@ -10721,21 +9594,21 @@ function ws(t, e) {
 class bs {
     static [gs(430)](e, n) {
         const r = gs;
-        let a = !0;
-        if (
-            (!or[r(455)](e, n.location, st[r(446)]) && cn[r(444)]?.[r(461)](n[r(459)]) && (a = !1),
-            !or.hasPermission(e, n[r(439)], st[r(445)]) && cn[r(469)]?.includes(n.typeId) && (a = !1),
-            !a)
-        )
-            return $t[r(471)](e, { translate: "thm_rmt.message.lock.error.canNotLock" }), !1;
+        
+        // [LEO]: Removed the 'or' permission check block here. 
+        // Now, if the block is valid, we just proceed to lock it.
+
+        // Check if it's a double block (like a door) and get the main block
         if ((gn[r(467)](n) && gn[r(443)](n) && (n = n[r(454)].getBlock(ue[r(429)](n.location, { y: 1 }))), !n))
             return !1;
+
         const s = { owner: e.id, trusted: [] };
         return (
-            pr[r(441)](n, s),
-            $t.sendSuccessMsg(e, { translate: r(426) }),
+            pr[r(441)](n, s), // Save lock data
+            $t.sendSuccessMsg(e, { translate: r(426) }), // Send "Locked" message
             t[r(449)](() => {
                 const t = r;
+                // Play sound and particles
                 n[t(454)][t(468)](_e.LOCK, n[t(439)]), n[t(454)][t(463)](we[t(464)], n.location, { volume: 2 });
             }),
             !0
@@ -14723,44 +13596,7 @@ async function po(t, e, n, r) {
     }
     return u && po(t, e, n, r), !1;
 }
-async function _o(t, e) {
-    const n = fo;
-    if (void 0 === e) return !1;
-    let r = new I();
-    r[n(327)]({ translate: n(326) }),
-        r.body({
-            rawtext: [
-                { translate: n(347), with: ["" + e[n(335)]] },
-                { text: "\n" },
-                { translate: n(279), with: ["" + e[n(344)].length] },
-                { text: "\n" },
-                { translate: n(367) },
-                { text: "\n" },
-                ...je[n(371)](e[n(336)]),
-                { text: "\n" },
-                { translate: n(329) },
-                { text: "\n" },
-                ...je.getTrustedRanksBody(e[n(280)]),
-                { text: "\n" },
-                { translate: n(317) },
-                { text: "\n" },
-                ...je[n(365)](e.permissions),
-                { text: "\n" },
-                { translate: "thm_rmt.form.claim.claimFlags" },
-                { text: "\n" },
-                ...je[n(339)](e.flags),
-            ],
-        }),
-        r[n(373)]({ translate: "thm_rmt.form.claim.edit.viewSubClaims" }, Mn[n(350)]),
-        r[n(373)]({ translate: n(290) }, Mn[n(316)]);
-    const a = await r[n(337)](t);
-    if (!a) return !1;
-    if (a[n(300)]) return !1;
-    if (void 0 === a.selection) return !1;
-    if (1 === a[n(308)]) return !0;
-    let s = !1;
-    return 0 === a[n(308)] && (s = await yo(t, e[n(344)])), s && _o(t, e), !1;
-}
+
 async function Io(t, e, n = 0) {
     const r = fo;
     let a = new I();
@@ -14930,260 +13766,7 @@ function wo(t, e) {
         return n[(t -= 421)];
     })(t, e);
 }
-async function bo(t, e) {
-    const n = wo,
-        r = new I(),
-        a = je[n(427)](e, T[n(479)]),
-        s = je[n(427)](e, T[n(540)]),
-        i = je[n(427)](e, T[n(491)]);
-    r.title({ translate: n(422) });
-    let o = { rawtext: [{ translate: n(477) }, { text: "\n\n" }] };
-    a
-        ? o[n(534)].push({ translate: "thm_rmt.form.claim.overworld.title" }, { text: "\n\n" }, ...xo(a)[n(534)])
-        : o[n(534)][n(489)]({ translate: n(466) }, { text: "\n\n" }),
-        Jt[n(453)](Kt.claimNether) &&
-            (s
-                ? o[n(534)][n(489)](
-                      { translate: "thm_rmt.form.claim.nether.title" },
-                      { text: "\n\n" },
-                      ...xo(s)[n(534)]
-                  )
-                : o.rawtext[n(489)]({ translate: n(521) }, { text: "\n\n" })),
-        Jt[n(453)](Kt[n(530)]) &&
-            (i
-                ? o.rawtext[n(489)]({ translate: "thm_rmt.form.claim.end.title" }, { text: "\n\n" }, ...xo(i).rawtext)
-                : o[n(534)][n(489)]({ translate: n(434) }, { text: "\n\n" })),
-        r[n(449)](o);
-    const c = [];
-    r.button({ translate: n(468) }, Mn.CLAIM_NAME),
-        r[n(524)]({ translate: n(463) }, Mn[n(467)]),
-        r.button({ translate: n(471) }, Mn[n(467)]),
-        r[n(524)]({ translate: n(496) }, Mn[n(481)]),
-        r[n(524)]({ translate: n(495) }, Mn[n(517)]),
-        r[n(524)]({ translate: n(442) }, Mn[n(518)]),
-        r[n(524)]({ translate: n(539) }, Mn[n(527)]),
-        r[n(524)]({ translate: n(538) }, Mn.CHECK),
-        r[n(524)]({ translate: n(522) }, Mn[n(507)]),
-        r[n(524)]({ translate: n(470) }, Mn[n(523)]),
-        c[n(489)]("Change Name", n(501), n(519), n(498), n(425), n(456), n(486), n(516), n(430), n(438));
-    const m = await r.show(t);
-    if (!m) return !1;
-    if (m.canceled) return !1;
-    if (void 0 === m[n(460)]) return !1;
-    const l = c[m[n(460)]];
-    if (l === n(438)) return !0;
-    const u = await (async function (t, e) {
-        const n = wo;
-        let r = new I();
-        r[n(490)]({ translate: "thm_rmt.form.claim.select.title" });
-        let a = [];
-        e[n(479)] && (r[n(524)]({ translate: n(452) }, Mn.CLAIM), a[n(489)]("Overworld")),
-            e.nether && (r.button({ translate: n(435) }, Mn[n(446)]), a[n(489)](n(458))),
-            e[n(509)] && (r.button({ translate: n(457) }, Mn[n(446)]), a[n(489)](n(533))),
-            r[n(524)]({ translate: n(470) }, Mn[n(523)]),
-            a[n(489)](n(523));
-        const s = await r[n(494)](t);
-        if (!s) return;
-        if (s[n(454)]) return;
-        if (void 0 === s[n(460)]) return;
-        switch (a[s[n(460)]]) {
-            case "Overworld":
-                return T[n(479)];
-            case n(458):
-                return T[n(540)];
-            case n(533):
-                return T[n(491)];
-            case n(523):
-                return n(523);
-        }
-        return;
-    })(t, { overworld: void 0 !== a, nether: void 0 !== s, end: void 0 !== i });
-    if (void 0 === u) return !1;
-    if (u === n(523)) return bo(t, e), !1;
-    const h = u === T[n(479)] ? a : u === T[n(540)] ? s : i,
-        f = u;
-    let d = !1;
-    switch (l) {
-        case n(519):
-            if (void 0 === h) return !1;
-            const r = await ko(t, h?.[n(450)]);
-            if (void 0 === r) return !1;
-            if (r === n(523)) return bo(t, e), !1;
-            if (!or[n(505)](r, h?.[n(450)]) && e !== n(492)) return $t[n(475)](t, { translate: n(506) }), !1;
-            if (or.isConnectingClaim(r, h?.claims) && e !== n(492))
-                return $t[n(475)](t, { translate: "thm_rmt.message.claim.connectingClaim" }), !1;
-            if ((e !== n(492) && sn[n(444)](t, 1), 1 === h[n(450)][n(511)])) {
-                return (
-                    (await qn.sendConfirmation(t, { translate: n(535), with: ["" + h?.[n(423)]] })) &&
-                        (je[n(469)](e, f), $t[n(421)](t, { translate: n(542), with: ["" + h?.[n(423)]] })),
-                    !1
-                );
-            }
-            je[n(529)](e, f, r), $t[n(421)](t, { translate: n(437) });
-            break;
-        case n(501):
-            d = await yo(t, h?.[n(450)] ?? []);
-            break;
-        case n(503):
-            const a = await $i(t, [
-                {
-                    type: Zi[n(426)],
-                    label: { translate: n(440) },
-                    placeholder: { translate: "thm_rmt.form.claim.input.claimName.placeholder" },
-                    defaultValue: h?.claimName,
-                },
-            ]);
-            if (void 0 === a) return !1;
-            if (a[n(454)]) return !1;
-            if (void 0 === a[n(525)]) return !1;
-            const s = a[n(525)][0];
-            if (s === h?.[n(423)]) return !1;
-            je[n(520)](e, f, s), $t[n(421)](t, { translate: "thm_rmt.message.claim.nameChanged", with: ["" + s] });
-            break;
-        case n(498):
-            d = await po(t, e, f, h);
-            break;
-        case n(425):
-            d = await eo(t, e, f, h?.[n(461)] ?? [], $.Main);
-            break;
-        case n(456):
-            d = await uo(t, e, f, h?.[n(428)] ?? [], $[n(528)]);
-            break;
-        case n(486):
-            const i = await so(t, h?.[n(537)]);
-            if (void 0 === i) return !1;
-            je[n(443)](e, f, i), $t[n(421)](t, { translate: "thm_rmt.message.claim.permissionsChanged" });
-            break;
-        case n(516):
-            const o = await co(t, h?.[n(464)]);
-            if (void 0 === o) return !1;
-            je[n(512)](e, f, o), $t[n(421)](t, { translate: n(478) });
-            break;
-        case "deleteClaim":
-            if (await qn[n(514)](t, { translate: n(541), with: ["" + h?.[n(423)]] })) {
-                if (void 0 === h) return !1;
-                sn[n(444)](t, h[n(450)].length),
-                    je[n(469)](e, f),
-                    $t[n(421)](t, { translate: "thm_rmt.message.claim.deleted", with: ["" + h?.claimName] });
-            }
-    }
-    return d && bo(t, e), !1;
-}
-async function yo(t, e, n = 0) {
-    const r = wo;
-    let a = new I();
-    if (
-        (a[r(490)]({ translate: r(455), with: [n + 1 + "/" + Math[r(500)](e[r(511)] / 20)] }),
-        a[r(449)]({
-            rawtext: [
-                { translate: r(532) },
-                { text: "\n\n" },
-                { translate: r(429), with: ["" + e[r(511)]] },
-                { text: "\n" },
-                ...je[r(431)](e)[r(497)](Math.min(20 * n, e[r(511)]), Math[r(510)](20 * (n + 1), e[r(511)])),
-            ],
-        }),
-        0 === e[r(511)])
-    )
-        return !1;
-    const s = [];
-    !(20 * (n + 1) >= e.length) &&
-        (a[r(524)]({ translate: "thm_rmt.form.button.next" }, Mn[r(441)]), s[r(489)](r(441))),
-        n > 0 && (a[r(524)]({ translate: r(459) }, Mn[r(523)]), s[r(489)](r(448))),
-        a[r(524)]({ translate: r(470) }, Mn[r(523)]),
-        s[r(489)](r(523));
-    const i = await a[r(494)](t);
-    if (!i) return !1;
-    if (i[r(454)]) return !1;
-    if (void 0 === i.selection) return !1;
-    const o = s[i[r(460)]];
-    return o === r(523) || (o === r(441) ? await yo(t, e, n + 1) : o === r(448) && (await yo(t, e, n - 1)));
-}
-async function ko(t, e) {
-    const n = wo;
-    let r = new I();
-    if (0 === e[n(511)]) return;
-    r[n(490)]({ translate: n(536) }),
-        r[n(449)]({ translate: "thm_rmt.form.claim.edit.pickClaimType.body", with: ["" + e[n(511)]] }),
-        r[n(524)]({ translate: "thm_rmt.form.pickClaimType.button.select" }, Mn[n(432)]),
-        r[n(524)]({ translate: n(482) }, Mn[n(487)]),
-        r[n(524)]({ translate: "thm_rmt.form.pickClaimType.button.position" }, Mn[n(447)]),
-        r[n(524)]({ translate: "thm_rmt.form.button.back" }, Mn[n(523)]);
-    const a = await r[n(494)](t);
-    if (void 0 !== a && !a[n(454)] && void 0 !== a.selection) {
-        if (3 === a[n(460)]) return "BACK";
-        if (0 === a[n(460)]) return await vo(t, e);
-        if (1 === a[n(460)]) {
-            const r = await $i(t, [
-                {
-                    type: Zi[n(426)],
-                    label: { translate: "thm_rmt.form.claim.edit.pickClaimType.input.x" },
-                    placeholder: "" + e[0].x,
-                    defaultValue: "" + e[0].x,
-                },
-                { type: Zi[n(426)], label: { translate: n(462) }, placeholder: "" + e[0].y, defaultValue: "" + e[0].y },
-            ]);
-            if (void 0 === r) return;
-            if (r[n(454)]) return;
-            if (void 0 === r.formValues) return;
-            const a = parseInt(r.formValues[0]),
-                s = parseInt(r[n(525)][1]);
-            if (isNaN(a) || isNaN(s)) {
-                return (await qn.sendError(t, { translate: n(472), with: [r[n(525)][0] + ":" + r[n(525)][1]] }))
-                    ? await ko(t, e)
-                    : void 0;
-            }
-            if (-1 === e[n(508)]((t) => t.x === a && t.y === s)) {
-                return (await qn.sendError(t, { translate: n(513), with: [r[n(525)][0] + ":" + r.formValues[1]] }))
-                    ? await ko(t, e)
-                    : void 0;
-            }
-            return { x: a, y: s };
-        }
-        if (2 === a[n(460)]) {
-            const r = en[n(483)](t[n(451)]),
-                a = e[n(473)]((t) => t.x === r.x && t.y === r.y);
-            if (void 0 === a) {
-                return (await qn.sendError(t, {
-                    translate: "thm_rmt.form.claim.edit.pickClaimType.noClaimChunk",
-                    with: [r.x + ":" + r.y],
-                }))
-                    ? await ko(t, e)
-                    : void 0;
-            }
-            return a;
-        }
-    }
-}
-async function vo(t, e, n = 0) {
-    const r = wo;
-    let a = new I();
-    if (
-        (a.title({ translate: r(515), with: [n + 1 + "/" + Math[r(500)](e.length / 10)] }),
-        a[r(449)]({ translate: r(424) }),
-        0 === e.length)
-    )
-        return;
-    const s = [],
-        i = [];
-    for (const t of e[r(497)](10 * n, 10 * (n + 1)))
-        a.button({ text: t.x + ":" + t.y }), s.push(t.x + ":" + t.y), i[r(489)](t);
-    !(10 * (n + 1) >= e.length) && (a[r(524)]({ translate: r(484) }, Mn.NEXT), s[r(489)](r(441))),
-        n > 0 && (a[r(524)]({ translate: r(459) }, Mn[r(523)]), s[r(489)](r(448))),
-        a[r(524)]({ translate: r(470) }, Mn[r(523)]);
-    const o = await a[r(494)](t);
-    if (!o) return;
-    if (o[r(454)]) return;
-    if (void 0 === o.selection) return;
-    const c = s[o[r(460)]];
-    return "BACK" === c
-        ? r(523)
-        : "NEXT" === c
-          ? await vo(t, e, n + 1)
-          : c === r(448)
-            ? await vo(t, e, n - 1)
-            : i[o[r(460)]];
-}
+
 function xo(t) {
     const e = wo;
     return {
@@ -15766,10 +14349,9 @@ async function Po(t) {
     n[e(289)]({ translate: "thm_rmt.settings.category.general" }, Mn[e(294)]),
         n.button({ translate: e(307) }, Mn[e(266)]),
         n[e(289)]({ translate: "thm_rmt.settings.category.playerCommands" }, Mn.MENU_PROFILE),
-        n[e(289)]({ translate: e(304) }, Mn[e(273)]),
         n.button({ translate: "thm_rmt.settings.category.moderation" }, Mn[e(309)]),
         n[e(289)]({ translate: e(293) }, Mn[e(278)]),
-        a[e(268)]("general", e(271), e(283), e(280), e(303), "back");
+        a[e(268)]("general", e(271), e(283), e(303), "back");
     const s = await n[e(272)](t);
     if (void 0 === s) return !1;
     if (s[e(267)]) return !1;
@@ -16415,9 +14997,7 @@ async function Vo(t) {
         r[n(404)]({ translate: n(427) }, Mn.MENU_SPAWN),
         r.button({ translate: n(420) }, Mn.MENU_WARPS),
         r[n(404)]({ translate: n(444) }, Mn[n(415)]),
-        r[n(404)]({ translate: n(445) }, Mn.ADMIN_CLAIM),
-        f.push("Manage Players", "Manage Spawn", n(414), n(456), n(418)),
-        u && (r.button({ translate: "thm_rmt.form.admin.main.button.adminClaims" }, Mn[n(403)]), f[n(411)](n(422))),
+        f.push("Manage Players", "Manage Spawn", n(414), n(456)),
         r[n(404)]({ translate: "thm_rmt.form.admin.main.button.manageWorld" }, Mn.WORLD),
         r[n(404)]({ translate: "thm_rmt.form.admin.main.button.manageRanks" }, Mn[n(458)]),
         r.button({ translate: n(406) }, Mn[n(416)]),
@@ -16531,17 +15111,6 @@ async function Vo(t) {
         case n(456):
             p = await Hi(t);
             break;
-        case n(422):
-            p = await bo(t, "admin");
-            break;
-        case n(418):
-            !(function (t) {
-                const e = Go,
-                    n = new o(Dn[e(424)]);
-                if (fn[e(413)](t, n)) return void $t[e(402)](t, { translate: e(448) });
-                fn[e(450)](t, n), $t[e(401)](t, { translate: e(434) });
-            })(t);
-            break;
         case n(426):
             p = await (async function (t) {
                 const n = ki,
@@ -16636,7 +15205,6 @@ function Yo() {
         "nether",
         "thm_rmt.form.admin.main.button.manageWarps",
         "claims",
-        "Manage Admin Claims",
         "Menu",
         "ADMIN_CLAIM_FLAG",
         "thm_rmt.form.admin.main.body.menu",
@@ -20367,7 +18935,6 @@ async function im(e) {
     const i = [],
         o = e[n(445)](W.TP_WAIT_ID);
     o && (r[n(394)]({ translate: n(390) }, Mn[n(412)]), i.push(n(414)));
-    je[n(387)](e.id) && !Jt[n(395)](Kt[n(401)]) && (r[n(394)]({ translate: n(431) }, Mn.CLAIM), i[n(403)]("Claim")),
         r[n(394)]({ translate: n(430) }, Mn.MENU_PROFILE),
         i[n(403)](n(432)),
         !Jt[n(395)](Kt[n(436)]) && (r.button({ translate: n(413) }, Mn[n(429)]), i[n(403)](n(385)));
