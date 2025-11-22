@@ -7087,7 +7087,7 @@ const pa = {
             const e = fa,
                 n = t[e(331)],
                 r = t[e(340)];
-            r && n && or[e(345)](r, r.location, st[e(341)]) && ha[e(344)](r, n);
+            r && n && ha[e(344)](r, n);
         },
     },
     _a = ga;
@@ -18956,9 +18956,6 @@ async function im(e) {
     switch (i[c[n(406)]]) {
         case n(414):
             t[n(442)](o), e.setDynamicProperty(W[n(407)], void 0), $t.sendSuccessMsg(e, { translate: n(391) });
-            break;
-        case n(438):
-            m = await bo(e, e.id);
             break;
         case "Profile":
             m = await lc(e);
